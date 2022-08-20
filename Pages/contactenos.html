@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href = "../Styles/Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <title>Temis - Contáctenos</title>
+</head>
+
+<body id="grillaContactenos">
+    <header class="cabecera">
+        <a href ="../index.html"><img class="cabeceraLogo" src = "../Imagenes/LogoTemis.png" alt = "Logo Temis" ></a>
+        <section class= "contenidoCabecera">
+            <p class= "cabeceraTitulo">TEMIS</p>
+            <p class= "cabeceraSubtitulo"> Estudio Jurídico - Notarial</p>
+        <nav class= "menu">
+            <ul class= "menuButtons">
+                <li class="cabeceraLink"><a href = "../index.html">Inicio</a></li>
+                <li class="cabeceraLink"><a href = "./servicios.html">Servicios</a></li>
+                <li class="cabeceraLink"><a href = "./nosotros.html">Sobre Nosotros</a></li>
+                <li class="cabeceraLink"><a href = "./equipo.html">Equipo</a></li>
+                <li class="cabeceraLink"><a href = "./contactenos.html">Contáctenos</a></li>          
+            </ul>         
+        </nav>
+        </section>
+    </header>
+    
+        <p class="contact__Titulo">Para contactarse con nosotros no dude en utilizar cualquiera de nuestros medios de comunicación disponible</p>
+        
+        <section class= "contact__Formulario">
+            <p class="contact__Subtitulo">Formulario de contacto</p>
+            <label class = "contact__Texto" for = "Nombre"> Nombre y Apellido</label>
+            <input class = "contact__Input" id = "Nombre" type = "text">
+
+            <label  class = "contact__Texto"  for = "Telefono"> Telefono </label>
+            <input  class = "contact__Input" id = "Telefono" type = "number">
+
+            <label  class = "contact__Texto" for = "Correo"> Email </label>
+            <input  class = "contact__Input" id = "Correo" type = "email">
+
+            <label class="contact__TipoTexto"> Tipo de Servicio: </label>
+
+            <section class="contact__Tipo">
+                <input class = "contact__TipoAbogado" id = "abogado" type ="radio" name ="tipo">
+                <label class = "contact__TipoAbogado" for = "abogado"> Abogado </label>
+                <input  class = "contact__TipoEscribano"  id = "escribano" type ="radio" name ="tipo">
+                <label class = "contact__TipoEscribano" for = "escribano"> Escribano </label>
+            </section>
+            
+            <label  class = "contact__Comentario" for = "Comentario"> Consulta: </label>
+            <textarea  class = "contact__Input" type = "text"> </textarea>
+            <input  class = "contact__Boton" type ="submit">
+        </section>
+
+        <section class= "contact__Otros">
+            <p class= "contact__Subtitulo"> Otros medios de comunicación</p>
+            <img class = "contact__Foto" src= "../Imagenes/oficina.jpg" alt ="Foto Oficina">
+            <p class= "contact__OtrosTexto"> Visite nuestras oficinas: Av. 18 de Julio 1010, Montevideo </p>
+            <p class= "contact__OtrosTexto"> Mail: contacto @temis.com.uy </p>
+            <p class= "contact__OtrosTexto"> Teléfono: 2902 1346</p>
+            <p class= "contact__OtrosTexto"> Whatsapp: +598-93-767-029</p>
+        </section>
+
+        <p class = "contact__Parrafo"> Cada caso es distinto, cada persona tiene su tiempo y forma de expresar 
+                la situación por la que atraviesa, en Temis, contamos con personal capacitado y formado para 
+                recibir cualquier tipo de consulta, Usted elija la mejor vía de comunicación, que nosotros adaptamos 
+                nuestros servicios a la medida que se requiera. </p>
+
+
+    <footer class = "pieDePagina">
+        <section class= "footerLogos">
+            <a href = "https://www.google.com/maps/place/Avenida+18+de+Julio+%26+R%C3%ADo+Negro,+11100+Montevideo,+Departamento+de+Montevideo/@-34.906062,-56.195772,17z/data=!3m1!4b1!4m5!3m4!1s0x959f802d49ab864f:0x8602f5f135b319a8!8m2!3d-34.906062!4d-56.1935833" target = "_blank"><img class= "comsLogo" src= "../Imagenes/Miniaturas/location.png" alt = "Logo Ubicación"></a>
+            <a href = "mailto:contacto@temis.com.uy"><img class= "comsLogo" src= "../Imagenes/Miniaturas/mail.png" alt = "Logo Mail"></a>
+            <a href ="tel:+59893767029"><img class= "comsLogo" src= "../Imagenes/Miniaturas/smartphone.png" alt = "Logo Smartphone"></a>
+        </section>
+        <section class= "footerText">
+            <p class = "comsDireccion"> Av. 18 de Julio 1010 Of. 201 Esq. Rio Negro Montevideo - Uruguay </p>
+            <p class = "comsMail"> contacto@temis.com.uy </p>
+            <p class = "comsCel"> +598 93 767 029 </p>
+        </section>
+        <p class = "derechos"> Desarrollado por Martin Gonzalez Castelo &copy 2022 </p>
+    </footer>
+</body>
+</html>
