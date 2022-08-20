@@ -66,6 +66,10 @@
     border-radius: 5px;
 }
 
+.cabeceraLink a:hover {
+    border: 1px solid rgb(214, 214, 214);
+}
+
 
 
 /* INDEX (Mobile) - Cuerpo */
@@ -179,7 +183,7 @@
 }
 
 .serv__Tipo {
-    background-color: rgb(253, 168, 168,0.8);
+    background-color: rgba(48, 33, 33, 0.8);
     border-radius: 15px;
     padding: 15px;
     margin: 15px;
@@ -320,10 +324,15 @@
 }
 
 .equipo__Foto {
-    flex: 1;
+
     position: relative;
     width: 35%;
     height: auto;
+    transition: width 2s;
+}
+
+.equipo__Foto:hover {
+    width: 50%;
 }
 
 .equipo__Filiacion {
@@ -443,6 +452,13 @@
     border-radius: 10px;
 }
 
+.contact__Boton:hover {
+    background-color: rgb(255, 233, 233);
+    padding: 15px;
+    margin-left: 50px; 
+    margin-right: 50px;
+}
+
 .contact__Otros {
     grid-area: otros;
     background-color: rgb(250, 236, 222);
@@ -539,6 +555,16 @@
         border-radius: 10px;
         border: rgb(0,0,0,0);
         transition: background-color 1s, color 1s;
+    }
+
+    .cabeceraLink a:hover {
+        background-color: rgb(186, 129, 129);
+        color: rgb(77, 74, 74);
+        font-size: 22px;
+        padding: 15px 20px; 
+        margin: 50px 30px;
+        border-radius: 10px;
+        border: rgb(0,0,0,0);
     }
 
 /* INDEX (Desktop) - Cuerpo */
@@ -676,9 +702,13 @@
     }
         
     .equipo__Foto {
-        width: 100%;
-        height: auto;
+        width: 30%;
     }
+
+    .equipo__Foto:hover {
+        width: 45%;
+    }
+
 
     .equipo__Nombre {
         padding: 20px 20px 20px 20px;
@@ -830,6 +860,14 @@
         border: rgb(0,0,0,0);
         border-radius: 10px;
     }
+    
+    .cabeceraLink a:hover {
+        background-color: rgb(197, 41, 41);
+        color: rgb(214, 214, 214);
+        padding: 4px;
+        border-radius: 10px;
+        border: rgb(0,0,0,0);
+    }
 
 /* INDEX (Tablet) - Cuerpo */
 
@@ -843,12 +881,12 @@
     }
 
     .citas {
-    display: flex;
-    flex-direction: row;
-    padding: 20px 40px;
-    margin-top: 50px;
-    background-position: center;
-    background-repeat: no-repeat;
+        display: flex;
+        flex-direction: row;
+        padding: 20px 40px;
+        margin-top: 50px;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .citaTop {
@@ -864,22 +902,22 @@
     }
 
 /* FOOTER (Tablet) */
-.pieDePagina { 
-    font-size: 14px;
-}
+    .pieDePagina { 
+        font-size: 14px;
+    }
 
-.comsLogo {
-    width: 48px;
-    height: 54px;
-}
+    .comsLogo {
+        width: 48px;
+        height: 54px;
+    }
 
-.comsDireccion, .comsMail, .comsCel {
-    display: inline;
-}
+    .comsDireccion, .comsMail, .comsCel {
+        display: inline;
+    }
 
-.derechos {   
-    font-size: 10px;
-}
+    .derechos {   
+        font-size: 10px;
+    }
 
 
 /* SERVICIOS (Desktop) */
@@ -953,7 +991,11 @@
     }
         
     .equipo__Foto {
-        width: 65%;
+        width: 45%;
+    }
+
+    .equipo__Foto:hover {
+        width: 60%;
     }
 
     .equipo__Nombre {
