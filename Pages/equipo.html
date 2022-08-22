@@ -4,176 +4,199 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel ="stylesheet" href = "../Styles/Styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <title>Temis - Equipo</title>
 </head>
 
-<body id = "grillaEquipo">
-    <header class="cabecera">
-        <a href ="../index.html"><img class="cabeceraLogo" src = "../Imagenes/LogoTemis.png" alt = "Logo Temis" ></a>
-        <section class= "contenidoCabecera">
-            <p class= "cabeceraTitulo">TEMIS</p>
-            <p class= "cabeceraSubtitulo"> Estudio Jurídico - Notarial</p>
-        <nav class= "menu">
-            <ul class= "menuButtons">
-                <li class="cabeceraLink"><a href = "../index.html">Inicio</a></li>
-                <li class="cabeceraLink"><a href = "./servicios.html">Servicios</a></li>
-                <li class="cabeceraLink"><a href = "./nosotros.html">Sobre Nosotros</a></li>
-                <li class="cabeceraLink"><a href = "./equipo.html">Equipo</a></li>
-                <li class="cabeceraLink"><a href = "./contactenos.html">Contáctenos</a></li>          
-            </ul>
+<body class = "container-fluid">
+    <header class="row cabecera">
+        <nav class = "col-3 col-lg-12 order-lg-3 navbar navbar-expand-lg">
+            <button class = "navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class=" navbar-nav m-auto mb-2 mb-lg-0 menuButtons">
+                    <li class="nav-item p-1 m-1 cabeceraLink">
+                        <a class="ps-2 px-lg-3 py-lg-2" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class = "nav-item p-1 m-1 cabeceraLink">
+                        <a class="ps-2 px-lg-3 py-lg-2" aria-current="page" href="./servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item p-1 m-1 cabeceraLink">
+                        <a class="ps-2 px-lg-3 py-lg-2" aria-current= "page" href="./nosotros.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item p-1 m-1 cabeceraLink">
+                        <a class="ps-2 px-lg-3 py-lg-2" aria-current="page" href="./equipo.html">Equipo</a>
+                    </li>
+                    <li class="nav-item p-1 m-1 cabeceraLink">
+                        <a class="ps-2 px-lg-3 py-lg-2" aria-current="page" href= "./contactenos.html">Contáctenos</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
+        <section class= "col-6 col-lg-10 order-lg-2 text-center contenidoCabecera">
+            <p class= "mt-2 cabeceraTitulo"> TEMIS </p>
+            <p class= "mb-1 cabeceraSubtitulo"> Estudio </p>
+            <p class= "mb-2 cabeceraSubtitulo2"> Jurídico - Notarial </p>
         </section>
+        <a class = "col-1 col-lg-2 order-lg-1" href ="../index.html"><img class= "pt-2 cabeceraLogo" src = "../Imagenes/LogoTemis.png" alt = "Logo Temis" ></a>
     </header>
        
-    <h1 class = "equipo__TituloPrincipal"> Nuestro Equipo </h1>
+    <h1 class = "text-center equipo__TituloPrincipal"> Nuestro Equipo </h1>
+    
+<!--Miembro del Equipo N° 1 -->   
+    <div class="row">
+        <section class="col mx-1 my-2 p-3 col-md me-md-1 p-md-3 equipo__Tarjeta" >
+            <section class = "pt-2 p-md-3 equipo__Miembro">
+                <section class="row justify-content-between equipo__MiembroDatos">
+                    <img class = "col-5 ms-1 col-md-5 equipo__Foto" src = "../Imagenes/Martin.jpg" alt ="Martin Gonzalez">
+                    <section class = "col-4 me-3 col-md-6 text-center equipo__Filiacion">
+                        <p class= "p-1 p-md-3 equipo__Nombre"> Dr. Martín Gonzalez Castelo</p>
+                        <p class= "p-md-2 equipo__Titulo"> Doctor en Derecho y Ciencias Sociales </p>
+                        <p class= "p-1 p-md-2 equipo__Cargo"> Administrador</p>
+                    </section>
+                </section>                
+    
+                <section class="row p-md-1 equipo__Eventos">
+                    <p class= "text-decoration-underline equipo__JornadasTitulo"> Jornadas Académicas: </p>
+                    <ul class= "equipo__ListaJornadas">
+                        <li class="ps-md-3 equipo__Jornadas">Nuevo Proceso Penal.</li>
+                        <li class="ps-md-3 equipo__Jornadas">Debate Sobre la Tipificación del Feminicidio.</l>
+                        <li class="ps-md-3 equipo__Jornadas">Jornada de Derecho Penal y Criminología.</li>
+                        <li class="ps-md-3 equipo__Jornadas">Acceso a la Justicia para personas con discapacidad.</li>
+                        <li class="ps-md-3 equipo__Jornadas">III Jornadas de Doctrina y Jurisprudencia de Derecho Civil.</li>
+                        <li class="ps-md-3 equipo__Jornadas">TiSA: Nuevos mecanismos del Comercio Internacional.</li>
+                        <li class="ps-md-3 equipo__Jornadas">Diálogo sobre el Acceso a los Medicamentos de Alto Costo.</li>
+                        <li class="ps-md-3 equipo__Jornadas">XII Semana Académica del Instituto de Derecho Administrativo.</li>
+                    </ul>                 
 
-<!--Miembro del Equipo N° 1 -->        
-    <section id = "miembro1" class="equipo__Tarjeta" >
-        <section class = "equipo__Miembro">
-            <section class="equipo__MiembroDatos">
-                <img class = "equipo__Foto" src = "../Imagenes/Martin.jpg" alt ="Martin Gonzalez">
-                <section class = "equipo__Filiacion">
-                    <p class= "equipo__Nombre">Dr. Martín Gonzalez Castelo</p>
-                    <p class= "equipo__Titulo"> Doctor en Derecho y Ciencias Sociales </p>
-                    <p class= "equipo__Cargo"> Administrador</p>
+                    <p class= "text-decoration-underline equipo__SeminariosTitulo">Seminarios:</p>
+                    <ul class= "equipo__ListaSeminarios">
+                        <li class= "ps-md-3 equipo__Seminarios">Seminario Recursos y Otros Medios Impugnativos.</li>
+                    </ul>
                 </section>
-            </section>                
- 
-            <section class="equipo__Eventos">
-                <p class= "equipo__JornadasTitulo"> Jornadas Académicas: </p>
 
-                <ul class= "equipo__ListaJornadas">
-                    <li class="equipo__Jornadas">Nuevo Proceso Penal.</li>
-                    <li class="equipo__Jornadas">Debate Sobre la Tipificación del Feminicidio.</l>
-                    <li class="equipo__Jornadas">Jornada de Derecho Penal y Criminología.</li>
-                    <li class="equipo__Jornadas">Acceso a la Justicia para personas con discapacidad.</li>
-                    <li class="equipo__Jornadas">III Jornadas de Doctrina y Jurisprudencia de Derecho Civil.</li>
-                    <li class="equipo__Jornadas">TiSA: Nuevos mecanismos del Comercio Internacional.</li>
-                    <li class="equipo__Jornadas">Diálogo sobre el Acceso a los Medicamentos de Alto Costo.</li>
-                    <li class="equipo__Jornadas">XII Semana Académica del Instituto de Derecho Administrativo.</li>
-                </ul>                 
-
-                <p class= "equipo__SeminariosTitulo">Seminarios:</p>
-
-                <ul class= "equipo__ListaSeminarios">
-                    <li class= "equipo__Seminarios">Seminario Recursos y Otros Medios Impugnativos.</li>
-                </ul>
-            </section>
-
-            <section class="Equipo__SeccionCitas">
-                <p class= "equipo__Cita">"Estudia. El derecho se transforma constantemente. Si no sigues sus pasos, serás cada día un poco menos abogado."
-                                          Eduardo J. Couture </p>
+                <section class="Equipo__SeccionCitas">
+                    <p class= "mt-2 p-2 equipo__Cita"> "Estudia. El derecho se transforma constantemente. Si no sigues sus pasos, serás cada día un poco menos abogado."
+                                                        Eduardo J. Couture </p>
+                </section>
             </section>
         </section>
-        
-    </section>
+    </div>
 
 <!--Miembro del Equipo N° 2 -->
-    <section id = "miembro2"  class="equipo__Tarjeta">
-        <section class = "equipo__Miembro">
-            <section class="equipo__MiembroDatos">
-                <img class = "equipo__Foto" src = "../Imagenes/David.jpg" alt ="David Ferreira">
-                <section class = "equipo__Filiacion">
-                    <p class= "equipo__Nombre">Dr. David Ferreira Da Costa</p>
-                    <p class= "equipo__Titulo"> Doctor en Derecho y Ciencias Sociales </p>
-                    <p class= "equipo__Cargo"> Encargado de Litigios </p>
+    <div class="row">
+        <section class="col mx-1 my-2 p-3 col-md me-md-1 p-md-3 equipo__Tarjeta" >
+            <section class = "pt-2 p-md-3 equipo__Miembro">
+                <section class="row justify-content-between equipo__MiembroDatos">
+                    <img class = "col-5 ms-1 col-md-5 equipo__Foto" src = "../Imagenes/David.jpg" alt ="Paul Rodd">
+                    <section class = "col-4 me-3 col-md-6 text-center equipo__Filiacion">
+                        <p class= "p-1 p-md-3 equipo__Nombre"> Dr. Paul Rodd</p>
+                        <p class= "p-md-2 equipo__Titulo"> Doctor en Derecho y Ciencias Sociales </p>
+                        <p class= "p-1 p-md-2 equipo__Cargo"> Encargado de Litigios</p>
+                    </section>
+                </section>                
+                
+                <section class="row p-md-1 equipo__Eventos">
+                    <p class= "text-decoration-underline equipo__JornadasTitulo"> Jornadas Académicas: </p>
+                    <ul class= "equipo__ListaJornadas">
+                        <li class="ps-md-3 equipo__Jornadas">III Jornadas de Doctrina y Jurisprudencia de Derecho Civil.</li>
+                        <li class="ps-md-3 equipo__Jornadas">TiSA: Nuevos mecanismos del Comercio Internacional.</li>
+                        <li class="ps-md-3 equipo__Jornadas">Diálogo sobre el Acceso a los Medicamentos de Alto Costo.</li>
+                        <li class="ps-md-3 equipo__Jornadas">XII Semana Académica del Instituto de Derecho Administrativo.</li>
+                    </ul>                 
                 </section>
-            </section>                
-            
-            <section class="equipo__Eventos">
-                <p class= "equipo__JornadasTitulo"> Jornadas Académicas: </p>
-
-                <ul class= "equipo__ListaJornadas">
-                    <li class="equipo__Jornadas">III Jornadas de Doctrina y Jurisprudencia de Derecho Civil.</li>
-                    <li class="equipo__Jornadas">TiSA: Nuevos mecanismos del Comercio Internacional.</li>
-                    <li class="equipo__Jornadas">Diálogo sobre el Acceso a los Medicamentos de Alto Costo.</li>
-                    <li class="equipo__Jornadas">XII Semana Académica del Instituto de Derecho Administrativo.</li>
-                </ul>                 
+                
+                <section class="col Equipo__SeccionCitas">
+                    <p class= "mt-2 p-2 equipo__Cita"> "Tu deber es luchar por el derecho; pero el día que encuentres en conflicto el derecho con la justicia, lucha por la justicia."
+                                                        Eduardo J. Couture </p>
+                </section> 
             </section>
-
-            <section class="Equipo__SeccionCitas">
-                <p class= "equipo__Cita"> "Tu deber es luchar por el derecho; pero el día que encuentres en conflicto el derecho con la justicia, lucha por la justicia."
-                                           Eduardo J. Couture </p>
-            </section>  
         </section>
-    </section>
+    </div>
 
 <!--Miembro del Equipo N° 3 -->   
-    <section id = "miembro3"  class="equipo__Tarjeta">
-        <section class = "equipo__Miembro">
-            <section class="equipo__MiembroDatos">
-                <img class = "equipo__Foto" src = "../Imagenes/Black.jpg" alt ="Scarlet Johanson">
-                <section class = "equipo__Filiacion">
-                    <p class= "equipo__Nombre">Esc. Scarlet Johanson </p>
-                    <p class= "equipo__Titulo"> Escribana Pública </p>
-                    <p class= "equipo__Cargo"> Encargada Notarial </p>
+    <div class="row">
+        <section class="col mx-1 my-2 p-3 col-md me-md-1 p-md-3 equipo__Tarjeta" >
+            <section class = "pt-2 p-md-3 equipo__Miembro">
+                <section class="row justify-content-between equipo__MiembroDatos">
+                    <img class = "col-5 ms-1 col-md-5 equipo__Foto" src = "../Imagenes/Black.jpg" alt ="Scarlet Johanson">
+                    <section class = "col-4 me-3 col-md-6 text-center equipo__Filiacion">
+                        <p class= "p-1 p-md-3 equipo__Nombre"> Esc. Scarlet Johanson</p>
+                        <p class= "p-md-2 equipo__Titulo"> Escribana Pública </p>
+                        <p class= "p-1 p-md-2 equipo__Cargo">  Encargada Notarial </p>
+                    </section>
+                </section>                
+
+                <section class="row p-md-1 equipo__Eventos">
+                    <p class= "text-decoration-underline equipo__JornadasTitulo"> Jornadas Académicas: </p>
+                    <ul class= "equipo__ListaJornadas">
+                        <li class="ps-md-3 equipo__Jornadas">III Jornadas de Doctrina y Jurisprudencia de Derecho Civil.</li>
+                        <li class="ps-md-3 equipo__Jornadas">TiSA: Nuevos mecanismos del Comercio Internacional.</li>
+                    </ul>  
+
+                    <p class= "text-decoration-underline equipo__SeminariosTitulo">Seminarios:</p>
+                    <ul class= "equipo__ListaSeminarios">
+                        <li class= "ps-md-3 equipo__Seminarios"> Sociedades Anónimas Simplificadas.</li>
+                        <li class= "ps-md-3 equipo__Seminarios"> Firmas digitales y medios electrónicos.</li>
+                    </ul>
                 </section>
-            </section>                
 
-            <section class="equipo__Eventos">
-                <p class= "equipo__JornadasTitulo"> Jornadas Académicas: </p>
-            
-                <ul class= "equipo__ListaJornadas">
-                    <li class="equipo__Jornadas">III Jornadas de Doctrina y Jurisprudencia de Derecho Civil.</li>
-                    <li class="equipo__Jornadas">TiSA: Nuevos mecanismos del Comercio Internacional.</li>
-                </ul>                 
-                <p class= "equipo__SeminariosTitulo">Seminarios:</p>
-
-                <ul class= "equipo__ListaSeminarios">
-                    <li class= "equipo__Seminarios"> Sociedades Anónimas Simplificadas.</li>
-                    <li class= "equipo__Seminarios"> Firmas digitales y medios electrónicos.</li>
-                </ul>
+                <section class="Equipo__SeccionCitas">
+                    <p class= "mt-2 p-2 equipo__Cita"> "la justicia es la constante y perpetua voluntad de dar a cada uno su Derecho."
+                                                        Domicio Ulpiano </p>
+                </section>  
             </section>
-
-            <section class="Equipo__SeccionCitas">
-                <p class= "equipo__Cita"> "la justicia es la constante y perpetua voluntad de dar a cada uno su Derecho."
-                                           Domicio Ulpiano </p>
-            </section>  
         </section>
-    </section>
+    </div>
 
-    
 <!--Miembro del Equipo N° 4  -->
-    <section id = "miembro4"  class="equipo__Tarjeta">
-        <section class = "equipo__Miembro">
-            <section class="equipo__MiembroDatos">
-                <img class = "equipo__Foto" src = "../Imagenes/Tony.jpg" alt ="Tony Stark">
-                <section class = "equipo__Filiacion">
-                    <p class= "equipo__Nombre"> Tony Stark</p>
-                    <p class= "equipo__Cargo"> Responsable Administrativo </p>
+    <div class="row">    
+        <section class="col mx-1 my-2 p-3 col-md me-md-1 p-md-3 equipo__Tarjeta" >
+            <section class = "pt-2 p-md-3 equipo__Miembro">
+                <section class="row justify-content-between equipo__MiembroDatos">
+                    <img class = "col-5 ms-1 col-md-5 equipo__Foto" src = "../Imagenes/Tony.jpg" alt ="Tony Stark">
+                    <section class = "col-4 me-3 col-md-6 text-center equipo__Filiacion">
+                        <p class= "p-1 p-md-3 equipo__Nombre">  Tony Stark</p>
+                        <p class= "p-1 p-md-2 equipo__Cargo">  Responsable Administrativo  </p>
+                    </section>
+                </section>                
+
+                <section class="row p-md-1 equipo__Eventos">
+                    <p class= "text-decoration-underline equipo__JornadasTitulo"> Jornadas Académicas: </p>
+                    <ul class= "equipo__ListaJornadas">
+                        <li class="ps-md-3 equipo__Jornadas"> Logística aplicada a los servicios </li>
+                    </ul>                 
                 </section>
-            </section>                
-
-            <section class="equipo__Eventos">
-                <p class= "equipo__JornadasTitulo"> Jornadas Académicas: </p>
-            
-                <ul class= "equipo__ListaJornadas">
-                    <li class="equipo__Jornadas"> Logística aplicada a los servicios </li>
-                </ul>                 
+                
+                <section class="Equipo__SeccionCitas">
+                    <p class= "mt-2 p-2 equipo__Cita"> "La verdadera sabiduría está en saber que nunca paras de aprender."
+                                                        Desconocido </p>
+                </section>
             </section>
-            <section class="Equipo__SeccionCitas">
-                <p class= "equipo__Cita">"La verdadera sabiduría está en saber que nunca paras de aprender."
-                                          Desconocido </p>
-            </section>
-        </section>
-    </section>        
+        </section>       
+    </div> 
 
-    <footer class = "pieDePagina">
-        <section class= "footerLogos">
-            <a href = "https://www.google.com/maps/place/Avenida+18+de+Julio+%26+R%C3%ADo+Negro,+11100+Montevideo,+Departamento+de+Montevideo/@-34.906062,-56.195772,17z/data=!3m1!4b1!4m5!3m4!1s0x959f802d49ab864f:0x8602f5f135b319a8!8m2!3d-34.906062!4d-56.1935833" target = "_blank"><img class= "comsLogo" src= "../Imagenes/Miniaturas/location.png" alt = "Logo Ubicación"></a>
-            <a href = "mailto:contacto@temis.com.uy"><img class= "comsLogo" src= "../Imagenes/Miniaturas/mail.png" alt = "Logo Mail"></a>
-            <a href ="tel:+59893767029"><img class= "comsLogo" src= "../Imagenes/Miniaturas/smartphone.png" alt = "Logo Smartphone"></a>
+    <footer class = "row pieDePagina">
+
+        <a class = "col-4 py-2 px-1 text-center footerLogos" href = "https://www.google.com/maps/place/Avenida+18+de+Julio+%26+R%C3%ADo+Negro,+11100+Montevideo,+Departamento+de+Montevideo/@-34.906062,-56.195772,17z/data=!3m1!4b1!4m5!3m4!1s0x959f802d49ab864f:0x8602f5f135b319a8!8m2!3d-34.906062!4d-56.1935833" target="_blank"><img class= "comsLogo" src= "../Imagenes/Miniaturas/location.png" alt = "Logo"></a>
+        <a class = "col-4 py-2 px-1 text-center footerLogos" href = "mailto:contacto@temis.com.uy"><img class= "comsLogo" src= "../Imagenes/Miniaturas/mail.png" alt = "Logo Mail"></a>
+        <a class = "col-4 py-2 px-1 text-center footerLogos" href = "tel:+59893767029"><img class= "comsLogo" src= "../Imagenes/Miniaturas/smartphone.png" alt = "Logo Whatsapp"></a>
+
+        <section class= "row text-center footerText">
+            <p class = "col-4 col-md-4 comsDireccion"> Av. 18 de Julio 1010 Of. 201 Esq. Rio Negro Montevideo - Uruguay </p>
+            <p class = "col-4 col-md-4 comsMail"> contacto@temis.com.uy </p>
+            <p class = "col-4 col-md-4 comsCel"> +598 93 767 029 </p>
         </section>
-        <section class= "footerText">
-            <p class = "comsDireccion"> Av. 18 de Julio 1010 Of. 201 Esq. Rio Negro Montevideo - Uruguay </p>
-            <p class = "comsMail"> contacto@temis.com.uy </p>
-            <p class = "comsCel"> +598 93 767 029 </p>
-        </section>
-        <p class = "derechos"> Desarrollado por Martin Gonzalez Castelo &copy 2022 </p>
+
+        <div class = "row">
+            <p class = "mt-3 col-12 text-center derechos"> Desarrollado por Martin Gonzalez Castelo &copy 2022 </p>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

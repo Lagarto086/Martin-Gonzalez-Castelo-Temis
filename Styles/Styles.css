@@ -4,86 +4,68 @@
 }
 
 
-/* ---------- MOBILE VIEW ---------- */
+/* -------------------- MOBILE-FIRST VIEW -------------------- */
 
-/* INDEX (Mobile) - grilla */
-#grillaIndex {
-    display: grid;
-    grid-template-areas: 
-    "cabecera"
-    "main"
-    "pieDePagina";
-}
-
-
-
+/* INDEX (Mobile) */
 /* HEADER (Mobile) */
+
 .cabeceraLogo { 
-    display: none;
+        display:block;
+        height: auto;
+        width: 51px;
 }
 
 .cabecera {
     background-color: rgb(100, 0, 0);
 }
 
-.contenidoCabecera {
-    grid-area: cabecera;
-    display: flex;
-    flex-direction: column;
-}
-
 .cabeceraTitulo {
-    font-size: 20px;
-    text-align: center;
+    font-size: 22px;
     color: rgb(214, 214, 214);  
 }
 
 .cabeceraSubtitulo {
     font-size: 18px; 
-    text-align: center;
     color: rgb(214, 214, 214);
-    margin-bottom: 30px;
+}
+
+.cabeceraSubtitulo2 {
+    font-size: 14px; 
+    color: rgb(214, 214, 214);
 }
 
 .menuButtons {
-    justify-content: space-around;
-    display: flex;
-    margin-top: 25px;
     list-style-type: none;
     font-size: 16px;
-    padding: 0;
-    flex-wrap: wrap;
-    margin-bottom: 8px;
-    height: 55px;
+    height: 150px;
+    display:inline;
 }
 
 .cabeceraLink a {
+    background: linear-gradient(70deg, rgba(150,0,0,1) 0%, rgba(100,0,0,1) 20%, rgba(100,0,0,1) 100%);
+    display: block;
     text-decoration: none;
-    background-color: rgb(170, 0, 0);
     color: rgb(214, 214, 214);
-    padding: 4px;
-    border: 1px solid rgb(32, 32, 32);
+    border-bottom: 1px solid rgb(32, 32, 32);
+    border-left: 1px solid rgb(32, 32, 32);
     border-radius: 5px;
 }
 
 .cabeceraLink a:hover {
-    border: 1px solid rgb(214, 214, 214);
+    background: linear-gradient(70deg, rgba(100,0,0,1) 0%, rgba(100,0,0,1) 80%, rgba(150,0,0,1) 100%);
+    border-bottom: 1px solid rgb(214, 214, 214);
+    border-left: 1px solid rgb(214, 214, 214);
 }
 
+/* INDEX (Mobile) - Main */
 
-
-/* INDEX (Mobile) - Cuerpo */
 .cuerpoIndex {
-    grid-area: main;
-    display: flex;
-    flex-direction: column;
     background-color: rgb(235, 235, 235);
     color: rgb(32, 32, 32);
     font-size: 16px;
 }
 
 .introduccion {
-    padding: 15px;
     text-indent: 80px;
     text-align: justify;
 }
@@ -92,157 +74,102 @@
     background-image: url(https://wallpaperaccess.com/full/702858.jpg);
     background-position: center;
     background-size: cover;
-    margin-bottom: 30px;
     color: hsla(0, 0%, 100%, 0.60);
-    padding: 8px;
 }
 
 .citaTop {
     background-color: rgba(0, 0, 0, 0.75);
     font-style: italic;
-    padding-top: 50px;
-    padding-left: 8px;
-    padding-right: 8px;
 }
 
 .citaBottom { 
     background-color: rgba(0, 0, 0, 0.66);
     font-style: italic;
-    padding-top: 90px 8px 50px 8px ;
-    text-align: right;
 }
 
 .autor {
     font-style: normal; 
 }
 
+/* FOOTER (Mobile)*/
 
-
-/* FOOTER */
 .pieDePagina { 
-    grid-area: pieDePagina;
     background-color: rgb(100, 0, 0);
     color: rgb(214, 214, 214);
     font-size: 10px;
-    padding: 20px;
-}
-
-.footerLogos {
-    display: flex;
-    justify-content: space-around;
 }
 
 .comsLogo {
     width: 24px;
     height: 28px;
-    margin: 15px 15px 15px 15px;
 }
 
 .footerText {
-    display: flex;
-}
-
-.comsDireccion, .comsMail, .comsCel {
     display: none;
-    flex: 1;
-    text-align: center;
 }
 
 .derechos {   
-    margin-top: 50px;
-    text-align: center;
     font-size: 12px;
 }
 
 
 
-/* SERVICIOS - Cuerpo */
-#grillaServicios {
-    display: grid;
-    grid-template-areas:
-    "cabecera"
-    "Juridico"
-    "Notarial"
-    "Otro"
-    "pieDePagina";
+/* SERVICIOS (Mobile) */
+
+.cuerpoServicios {
     background-image: url(../Imagenes/escritorio.jpg);
     background-size: cover;
-    text-align: center;
-}
-
-#servJuridico {
-    grid-area: Juridico;
-}
-
-#servNotarial {
-    grid-area: Notarial;
-}
-
-#servOtro {
-    grid-area: Otro;
 }
 
 .serv__Tipo {
     background-color: rgba(48, 33, 33, 0.8);
     border-radius: 15px;
-    padding: 15px;
-    margin: 15px;
 }
 
 .serv__TipoTitulo {
     background-color: rgb(100, 0, 0);
     color: rgb(214, 214, 214);
-    font-size: 16px;
+    font-size: 20px;
     border-radius: 20px;
-    padding: 12px;
 }
 
 .serv__Rama {
+    background-color: rgba(255, 0, 0, 0.1);
+    border-radius: 15px;
     list-style-type: none;
-    color: rgb(214, 214, 214);
-    font-size: 16px;
-    padding-top: 12px;
-    padding-bottom: 20px;
+    color: rgb(201, 201, 201);
+    font-size: 18px;
 }
 
 .serv__RamaLista {
     list-style-type: none;
     color: rgb(214, 214, 214);
     font-size: 14px;
-    padding-left: 12px; 
 }
 
 
 
 /* SOBRE NOSOTROS - Cuerpo */
-#grillaNosotros {
-    display: grid;
-    grid-template-areas: 
-    "cabecera"
-    "main"
-    "pieDePagina";
-}
-
 .nosotrosCuerpo {
-    grid-area: main;
     background-image: url(../Imagenes/Temis.jpg);
-    background-size: cover;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
 }
 
 .nosotros__Subtitulo {
+    border-radius: 25px;
     background-color: rgba(0, 0, 0, 0.697);
-    text-align: center;
-    padding-top: 35px;
-    padding-bottom: 35px;
     font-size: 20px;
     color: rgb(255, 190, 190);
     text-decoration: underline solid 3px rgb(255, 190, 190);
 }
 
 .nosotros__Texto {
-    background-color: rgb(69, 54, 54,0.7);
+    border-radius: 25px;
+    background-color: rgba(69, 54, 54, 0.864);
     color: rgb(214, 214, 214);
-    padding: 35px 10px;
     font-size: 18px;
     line-height: 2;
     text-align: justify;
@@ -253,65 +180,27 @@
 
 
 /* EQUIPO - Cuerpo */
+
 .equipo__Cuerpo {
     background-color: rgb(211, 208, 208);
     color: rgb(32, 32, 32);
     font-size: 34px;
 }
 
-#grillaEquipo {
-    display: grid;
-    grid-template-areas: 
-    "cabecera"
-    "titulo"
-    "miembro1"
-    "miembro2"
-    "miembro3"
-    "miembro4"
-    "pieDePagina";
-}
-
-.cabecera {
-    grid-area: cabecera;
-}
-
 .equipo__TituloPrincipal {
-    grid-area: titulo;
     font-size: 20px;
     text-align: center;
     font-style: italic;
 }
 
-#miembro1 {
-    grid-area: miembro1;
-}
-#miembro2 {
-    grid-area: miembro2;
-}
-#miembro3 {
-    grid-area: miembro3;
-}
-#miembro4 {
-    grid-area: miembro4;
-}
-
-.pieDePagina {
-    grid-area: pieDePagina;
-}
-
 .equipo__Tarjeta {
-    display: flex;
-    flex-direction: column;
     background-color: rgb(78, 12, 12);
     color: rgb(214, 214, 214);
-    margin: 8px;
-    padding: 15px;
 }
 
 .equipo__Miembro {
     display: flex;    
     background-color: rgb(69, 54, 54);
-    margin-top: 10px;
     flex-direction: column;
 }
 
@@ -319,42 +208,32 @@
     text-align: right;
     line-height: 1;
     background-size: cover;
-    display: flex;
-    flex-direction: row;
 }
 
 .equipo__Foto {
-
     position: relative;
-    width: 35%;
-    height: auto;
+    width: 50%;
+    height: 50%;
     transition: width 2s;
 }
 
 .equipo__Foto:hover {
-    width: 50%;
+    width: 60%;
 }
 
 .equipo__Filiacion {
     background-color:  rgba(0, 0, 0, 0.537);
-    flex: 2;
-    align-self: center;
 }
 
 .equipo__Nombre {
     font-size: 22px;
-    text-align: center;
-    padding-top: 15px;
 }
 
 .equipo__Titulo {
-    padding: 12px;
     font-size: 14px;
-    text-align: center;
 }
 
 .equipo__Cargo {
-    padding: 12px;
     font-size: 14px;
     text-align: center;
 }
@@ -362,23 +241,22 @@
 .equipo__Eventos {
     display: none;
     flex-direction: column;
-    color: rgb(214, 214, 214);
     line-height: 2;
 }
 
 .equipo__JornadasTitulo,
 .equipo__SeminariosTitulo {
     display: none;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: left;
-    font-size: 16px;
-    text-decoration: underline solid 3px rgb(100, 0, 0);
+}
+
+.equipo__ListaJornadas {
+display: none;
+
 }
 
 .equipo__Jornadas,
 .equipo__Seminarios {
-    display: none;
+
     font-size: 16px;
 }
 
@@ -387,102 +265,55 @@
     color: rgb(214, 214, 214);
     font-style: italic;  
     font-size: 16px;
-    padding: 15px; 
 }
 
 
 
 /* CONTÁCTENOS - Cuerpo */
-#grillaContactenos {
-    display: grid;
-    grid-template-areas: 
-    "cabecera"
-    "titulo"
-    "formulario"
-    "otros"
-    "texto"
-    "pieDePagina";
-}
-
-.cabecera {
-    grid-area: cabecera;
-}
 
 .contact__Titulo {
-    grid-area: titulo;
     font-size: 20px;
-    text-align: center;
-    margin-bottom: 20px;
 }
 
 .contact__Formulario {
-    grid-area: formulario;
-    display: flex;
-    flex-direction: column;
     border-radius: 25px;
     background-color: rgb(78, 12, 12);
     color: rgb(245, 245, 220);
-    padding: 15px;
-    margin: 10px;
 }
 
 .contact__Subtitulo {
     font-size: 22px;
-    text-align: center;
-    margin-bottom: 25px;
 }
 
 .contact__Input {
     font-size: 18px;
-    padding: 5px;
-    margin: 7px 7px 14px 7px;
-}
-
-.contact__Tipo {
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 20px 20px 20px;
 }
 
 .contact__Boton {
     background-color: rgb(245, 245, 220);
-    padding: 15px;
-    margin-left: 50px; 
-    margin-right: 50px;
     border-radius: 10px;
 }
 
 .contact__Boton:hover {
     background-color: rgb(255, 233, 233);
-    padding: 15px;
-    margin-left: 50px; 
-    margin-right: 50px;
 }
 
 .contact__Otros {
-    grid-area: otros;
     background-color: rgb(250, 236, 222);
     border-radius: 25px;
-    padding: 15px;
-    margin: 10px;
 }
 
 .contact__Foto {
     border-radius: 25px;
     width: 80%;
-    margin-left: 30px;
+    height: auto;
 }
 
 .contact__OtrosTexto {
-    padding: 15px;
-    margin: 10px;
     font-size: 16px;
 }
 
 .contact__Parrafo {
-    grid-area: texto;
-    margin: 10px;
-    padding: 15px;
     font-size: 16px;
     text-indent: 80px;
     text-align: justify;
@@ -504,56 +335,230 @@
     font-size: 16px;   
 }
 
-.contact__Texto {
-    padding: 10px;
-}
 
-.pieDePagina {
-    grid-area: pieDePagina;
-}
+/* -------------------- TABLET VIEW -------------------- */
 
-
-
-/* ---------- DESKTOP VIEW ---------- */
-
-@media screen and  (min-width: 1200px) { 
-    
-/* HEADER (Desktop) */
-    .cabecera {
-        display: flex;
-    }
+@media screen and  (min-width: 768px) { 
+  
+    /* INDEX (Tablet) */
+    /* HEADER (Tablet) */
 
     .cabeceraLogo { 
-        display:block;
         height: 255px;
         width: 153px;
-        padding: 20px 10px 10px 20px;
     }
 
-    .contenidoCabecera {
-        flex: 1; 
+    .cabeceraTitulo {
+        font-size: 58px;
+    }
+
+    .cabeceraSubtitulo, 
+    .cabeceraSubtitulo2 { 
+        font-size: 32px;
+    }
+
+    .cabeceraLink a {
+        font-size: 22px;
+    }
+
+    .cabeceraLink a:hover {
+    font-size: 22px;
+    }
+
+    /* INDEX (Tablet) - Cuerpo */
+
+    .cuerpoIndex {
+        font-size: 30px;
+    }
+
+    .citas {
+        height: 700px;
+    }
+    
+    /* FOOTER (Tablet) */
+
+    .pieDePagina { 
+        font-size: 18px;
+    }
+
+    .comsLogo {
+        width: 60px;
+        height: 70px;
+    }
+
+    .footerText {
+        display: inline-flex;
+    }
+
+    .derechos {   
+    font-size: 16px;
+    }
+
+
+
+    /* SERVICIOS (Tablet) */
+
+    .serv__Tipo {
+        border-radius: 25px;
+    }
+
+    .serv__TipoTitulo {
+        font-size: 28px;
+    }
+
+    .serv__Rama {
+        font-size: 24px;
+    }
+
+    .serv__RamaLista {
+        font-size: 20px;
+        line-height: 2;
+    }
+
+
+
+    /* SOBRE NOSOTROS (Tablet) - Cuerpo */
+
+    .nosotros__Subtitulo {
+        font-size: 34px;
+    }
+
+    .nosotros__Texto {
+        font-size: 28px;
+    }
+
+    .equipo__Cuerpo {
+        padding: 20px 20px 20px 200px;
+    }
+
+
+
+    /* EQUIPO (Tablet) - Cuerpo */
+
+    .equipo__TituloPrincipal {
+        font-size: 48px;
+        font-style: italic;
+    }
+
+    .equipo__Foto {
+        width: 30%;
+    }
+
+    .equipo__Foto:hover {
+        width: 45%;
+    }
+
+    .equipo__Nombre {
+        font-size: 32px;
+    }
+    
+    .equipo__Titulo,
+    .equipo__Cargo {
+        font-size: 18px;
+    }
+
+    .equipo__Eventos {
+        display: inline-flex;
+    }
+
+    .equipo__ListaJornadas,
+    .equipo__ListaSeminarios {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .equipo__JornadasTitulo,
+    .equipo__SeminariosTitulo {
+        display: inline-flex;
+        font-size: 26px;
+    }
+        
+    .equipo__Jornadas,
+    .equipo__Seminarios {
+        display: inline-flex;
+        font-size: 20px;
+    }
+        
+    .equipo__Cita {
+        font-size: 20px;
+    }
+
+
+
+    /* CONTÁCTENOS (Tablet) - Cuerpo */
+
+    .contact__Titulo {
+        font-size: 28px;
+    }
+
+    .contact__Subtitulo {
+        font-size: 28px;
+    }
+
+    .contact__Input {
+        font-size: 22px;
+    }
+
+    .contact__Otros {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact__Texto {
+        font-size: 24px;
+    }
+
+    .contact__OtrosTexto {
+        font-size: 24px;
+    }
+
+    .contact__Parrafo {
+        font-size: 24px;
+    }
+    .contact__Tipo,
+    .contact__Comentario,
+    .contact__TipoTexto {
+        font-size: 24px;
+    }
+}
+
+
+
+
+/* -------------------- DESKTOP VIEW -------------------- */
+
+@media screen and  (min-width: 992px) { 
+    
+    /* HEADER (Desktop) */
+
+    .cabeceraLogo { 
+        height: 255px;
+        width: 153px;
     }
 
     .cabeceraTitulo {
         font-size: 72px;
     }
 
-    .cabeceraSubtitulo { 
+    .cabeceraSubtitulo,
+    .cabeceraSubtitulo2 { 
         font-size: 42px;
     }
 
     .menuButtons {
-        padding: 0;
+        justify-content: space-evenly;
         font-size: 22px;
-        align-content: space-around;
-    }
-
+        display: flex;
+        flex-direction: row;
+        height: 80px;
+        }
+    
     .cabeceraLink a {
+        display: inline;
         font-size: 22px;
-        padding: 15px 20px; 
-        margin: 50px 30px;
         border-radius: 10px;
-        border: rgb(0,0,0,0);
+        border-bottom: 1px solid rgba(36, 36, 36, 0);
+        border-top: 1px solid rgba(36, 36, 36, 0);
         transition: background-color 1s, color 1s;
     }
 
@@ -561,39 +566,18 @@
         background-color: rgb(186, 129, 129);
         color: rgb(77, 74, 74);
         font-size: 22px;
-        padding: 15px 20px; 
-        margin: 50px 30px;
         border-radius: 10px;
         border: rgb(0,0,0,0);
     }
+    
+    /* INDEX (Desktop) - Cuerpo */
 
-/* INDEX (Desktop) - Cuerpo */
     .cuerpoIndex {
         font-size: 30px;
-        padding: 20px;
     }
 
-    .introduccion {
-        padding: 20px;
-    }
+    /* FOOTER (Desktop) */
 
-    .citas {
-        display: flex;
-        flex-direction: row;
-        padding: 50px;
-        margin-top: 50px;
-    }
-
-    .citaTop {
-        margin-bottom: 800px;
-     
-    }
-
-    .citaBottom { 
-        margin-top: 800px;
-    }
-
-/* FOOTER (Desktop) */
     .pieDePagina { 
         font-size: 22px;
     }
@@ -613,158 +597,81 @@
 
 
 
-/* SERVICIOS (Desktop) */
-    #grillaServicios {
-        display: grid;
-        grid-template-areas:
-        "cabecera cabecera cabecera "
-        "Juridico Notarial Otro"
-        "pieDePagina pieDePagina pieDePagina ";
-        background-image: url(../Imagenes/escritorio.jpg);
-        background-size: cover;
-        text-align: center;
-    }
+    /* SERVICIOS (Desktop) */
 
     .serv__Tipo {
         border-radius: 25px;
-        padding: 25px;
-        margin: 25px;
     }
 
     .serv__TipoTitulo {
-        font-size: 36px;
-        padding: 25px;
+        font-size: 32px;
     }
 
     .serv__Rama {
-        font-size: 32px;
-        padding-top: 35px;
+        font-size: 28px;
     }
 
     .serv__RamaLista {
-        font-size: 26px;
-        padding-left: 25px; 
-        line-height: 3;
-        text-align: left;
+        font-size: 24px;
+        line-height: 2;
     }
 
 
 
 /* SOBRE NOSOTROS (Desktop) - Cuerpo */
+
     .nosotros__Subtitulo {
-        padding-top: 50px;
-        padding-bottom: 50px;
         font-size: 34px;
     }
 
     .nosotros__Texto {
-        padding: 50px;
         font-size: 28px;
     }
 
 
 
 /* EQUIPO (Desktop) - Cuerpo */
-    .equipo__Cuerpo {
-        padding: 20px 20px 20px 200px;
-    }
-
-    #grillaEquipo {
-        display: grid;
-        grid-template-areas: 
-        "cabecera cabecera"
-        "titulo titulo"
-        "miembro1 miembro2"
-        "miembro3 miembro4"
-        "pieDePagina pieDePagina";
-    }
 
     .equipo__TituloPrincipal {
-        grid-area: titulo;
         font-size: 48px;
-        text-align: center;
         font-style: italic;
     }
 
-    .equipo__Tarjeta {
-        justify-content: center;
-        flex-direction: row;
-        margin: 15px 15px 15px 15px;
-        padding: 20px;
-    }
-
-    .equipo__Miembro {
-        padding: 30px;
-    }
-
-    .equipo__MiembroDatos {
-        text-align: center;
-    }
-        
-    .equipo__Foto {
-        width: 30%;
-    }
-
-    .equipo__Foto:hover {
-        width: 45%;
-    }
-
-
-    .equipo__Nombre {
-        padding: 20px 20px 20px 20px;
+   .equipo__Nombre {
         font-size: 32px;
     }
     
     .equipo__Titulo,
     .equipo__Cargo {
         font-size: 18px;
-        padding: 15px 15px 15px 15px;
     }
 
     .equipo__Eventos {
-        display: flex;
-        flex: 2;
-        padding: 10px 10px 10px 80px;
+        display: inline-flex;
     }
     
     .equipo__JornadasTitulo,
     .equipo__SeminariosTitulo {
-        display: flex;
+        display: inline-flex;
         font-size: 22px;
     }
         
     .equipo__Jornadas,
     .equipo__Seminarios {
-        display: flex;
+        display: inline-flex;
         font-size: 22px;
     }
         
     .equipo__Cita {
-        flex: 1;
         font-size: 20px;
     }
 
 
 
     /* CONTÁCTENOS (Desktop) - Cuerpo */
-    #grillaContactenos {
-        display: grid;
-        grid-template-areas: 
-        "cabecera cabecera cabecera"
-        "titulo titulo titulo"
-        "formulario otros texto"
-        "pieDePagina pieDePagina pieDePagina ";
-        grid-template-columns: 30% 40% 30%;
-    }
 
     .contact__Titulo {
         font-size: 28px;
-        margin-bottom: 80px;
-    }
-
-    .contact__Formulario {
-        padding: 20px;
-        margin: 10px 40px 30px 40px;
     }
 
     .contact__Subtitulo {
@@ -774,328 +681,23 @@
 
     .contact__Input {
         font-size: 22px;
-        margin: 10px 40px 30px 40px;
-    }
-
-    .contact__Otros {
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-        margin: 10px 40px 30px 40px;
     }
 
     .contact__Texto {
         font-size: 24px;
-        padding: 10px;
     }
 
     .contact__OtrosTexto {
-        margin: 20px;
         font-size: 24px;
     }
 
     .contact__Parrafo {
-        flex: 1;
-        margin: 10px 40px 30px 40px;   
-        padding: 20px;
         font-size: 24px;
     }
+
     .contact__Tipo,
     .contact__Comentario,
     .contact__TipoTexto {
         font-size: 24px;
-    }
-}
-
-    
-/* ---------- TABLET VIEW ---------- */
-@media screen and (min-width: 600px) and (max-width: 1199px) {
-
-/* INDEX (Tablet) - */
-
-/* HEADER (Tablet) */
-
-    .cabecera {
-        grid-area: cabecera;
-        display: flex;
-    }
-
-    .cabeceraLogo { 
-        display:block;
-        height: 170px;
-        width: 102px;
-        padding: 20px 10px 10px 20px;
-    }
-
-    .contenidoCabecera {
-        display: flex;
-        flex-direction: column;
-        flex: 2;
-    }
-
-    .cabeceraTitulo {
-        font-size: 42px; 
-    }
-
-    .cabeceraSubtitulo { 
-        font-size: 28px;
-    }
-
-    .menuButtons {
-        justify-content: space-around;
-        display: flex;
-        margin-top: 25px;
-        list-style-type: none;
-        font-size: 18px;
-        flex-wrap: wrap;
-        margin-bottom: 8px;
-        height: 55px;
-    }
-
-    .cabeceraLink a {
-        text-decoration: none;
-        background-color: rgb(170, 0, 0);
-        color: rgb(214, 214, 214);
-        padding: 4px;
-        border: rgb(0,0,0,0);
-        border-radius: 10px;
-    }
-    
-    .cabeceraLink a:hover {
-        background-color: rgb(197, 41, 41);
-        color: rgb(214, 214, 214);
-        padding: 4px;
-        border-radius: 10px;
-        border: rgb(0,0,0,0);
-    }
-
-/* INDEX (Tablet) - Cuerpo */
-
-    .cuerpoIndex {
-        font-size: 20px;
-        padding: 10px;
-    }
-
-    .introduccion {
-        padding: 20px;
-    }
-
-    .citas {
-        display: flex;
-        flex-direction: row;
-        padding: 20px 40px;
-        margin-top: 50px;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    .citaTop {
-        margin-bottom: 250px;
-        padding-top: 20px;
-        padding-bottom: 15px;
-    }
-
-    .citaBottom { 
-        margin-top: 250px;
-        padding-top: 20px;
-        padding-bottom: 15px;
-    }
-
-/* FOOTER (Tablet) */
-    .pieDePagina { 
-        font-size: 14px;
-    }
-
-    .comsLogo {
-        width: 48px;
-        height: 54px;
-    }
-
-    .comsDireccion, .comsMail, .comsCel {
-        display: inline;
-    }
-
-    .derechos {   
-        font-size: 10px;
-    }
-
-
-/* SERVICIOS (Desktop) */
-    #grillaServicios {
-        display: grid;
-        grid-template-areas:
-        "cabecera cabecera"
-        "Juridico Notarial"
-        "Otro Otro"
-        "pieDePagina pieDePagina ";
-    }
-
-    .serv__Tipo {
-        border-radius: 25px;
-        padding: 25px;
-        margin: 25px;
-    }
-    
-    .serv__TipoTitulo {
-        font-size: 20px;
-        padding: 16px;
-    }
-
-    .serv__Rama {
-        font-size: 20px;
-        padding-top: 22px;
-    }
-
-    .serv__RamaLista {
-        font-size: 16px;
-        padding-left: 25px;
-        line-height: 2;
-    }
-
-
-
-    /* SOBRE NOSOTROS (Tablet) - Cuerpo */
-    .nosotros__Subtitulo {
-        font-size: 22px;
-    }
-
-    .nosotros__Texto {
-        padding: 50px;
-        font-size: 20px;
-    }
-
-
-
-    /* EQUIPO (Desktop) - Cuerpo */
-    .equipo__Cuerpo {
-        font-size: 36px;
-    }
-
-    .equipo__TituloPrincipal {
-        font-size: 28px;        
-    }
-
-    .equipo__Tarjeta {
-        justify-content: center;
-        flex-direction: row;
-        margin: 10px;
-        padding: 17px;
-    }
-
-    .equipo__Miembro {
-        padding: 15px;
-    }
-
-    .equipo__MiembroDatos {
-        text-align: center;
-    }
-        
-    .equipo__Foto {
-        width: 45%;
-    }
-
-    .equipo__Foto:hover {
-        width: 60%;
-    }
-
-    .equipo__Nombre {
-        padding: 20px;
-        font-size: 26px;
-    }
-    
-    .equipo__Titulo,
-    .equipo__Cargo {
-        font-size: 20px;
-        padding: 15px;
-    }
-
-    .equipo__Eventos {
-        display: flex;
-        flex: 2;
-        padding: 10px 10px 10px 80px;
-    }
-    
-    .equipo__JornadasTitulo,
-    .equipo__SeminariosTitulo {
-        display: flex;
-        font-size: 20px;
-    }
-        
-    .equipo__Jornadas,
-    .equipo__Seminarios {
-        display: flex;
-        font-size: 20px;
-    }
-        
-    .equipo__Cita {
-        flex: 1;
-        font-size: 16px;
-    }
-
-
-
-/* CONTÁCTENOS (Tablet) - Cuerpo */
-    #grillaContactenos {
-    display: grid;
-    grid-template-areas: 
-    "cabecera cabecera"
-    "titulo titulo"
-    "formulario otros"
-    "texto texto"
-    "pieDePagina pieDePagina ";
-    grid-template-columns: 50% 50%;
-    }
-
-    .contact__Titulo {
-        font-size: 20px;
-        margin-bottom: 50px;
-        padding: 40px;
-    }
-
-    .contact__Formulario {
-        padding: 15px;
-        margin: 10px 30px 20px 30px;
-    }
-
-    .contact__Subtitulo {
-        font-size: 24px;
-    }
-
-    .contact__Input {
-        font-size: 16px;
-        margin: 8px 30px 20px 30px;
-    }
-
-    .contact__Otros {
-        display: flex;
-        flex-direction: column;
-        padding: 16px;
-        margin: 10px 40px 30px 40px;
-    }
-
-    .contact__OtrosTexto {
-        flex-wrap: nowrap;
-        margin: 14px;
-        font-size: 20px;
-    }
-
-    .contact__Parrafo {
-        margin: 10px 40px 30px 40px;   
-        padding: 20px;
-        font-size: 20px;
-    }
-    
-    .contact__Coms {
-        font-size: 14px;   
-    }
-
-    .contact__Texto {
-        font-size: 20px;
-    }
-    .contact__Tipo,
-    .contact__Comentario,
-    .contact__TipoTexto,
-    .contact__Texto {
-        font-size: 20px;
     }
 }
