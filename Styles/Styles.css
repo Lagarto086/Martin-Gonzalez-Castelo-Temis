@@ -74,6 +74,7 @@
     background-image: url(https://wallpaperaccess.com/full/702858.jpg);
     background-position: center;
     background-size: cover;
+    font-size: 28px;
     color: hsla(0, 0%, 100%, 0.60);
 }
 
@@ -344,6 +345,7 @@ display: none;
     /* HEADER (Tablet) */
 
     .cabeceraLogo { 
+        position: absolute;
         height: 255px;
         width: 153px;
     }
@@ -372,6 +374,7 @@ display: none;
     }
 
     .citas {
+        font-size: 48px;
         height: 700px;
     }
     
@@ -445,7 +448,7 @@ display: none;
     }
 
     .equipo__Foto:hover {
-        width: 45%;
+        width: 35%;
     }
 
     .equipo__Nombre {
@@ -532,6 +535,7 @@ display: none;
     /* HEADER (Desktop) */
 
     .cabeceraLogo { 
+        position: absolute;
         height: 255px;
         width: 153px;
     }
