@@ -1,0 +1,80 @@
+/*                (MOBILE - FOOTER)                  */
+
+.pieDePagina { 
+    background-color: rgb(100, 0, 0);
+    color: rgb(214, 214, 214);
+    font-size: 10px;
+
+    .footerLogos {
+        
+        .comsLogo {
+            width: 24px;
+            height: 28px;
+        }
+    }
+
+    .footerText {
+        display: none;
+    }
+       
+    div {
+         
+        .derechos {   
+            font-size: 12px;
+        }
+    }
+}
+
+
+/*                (TABLET - FOOTER)                  */
+@media screen and  (min-width: 768px) { 
+
+    .pieDePagina { 
+        font-size: 22px;
+
+        .footerLogos {
+
+            .comsLogo {
+                width: 60px;
+                height: 70px;
+            }
+        }
+
+        .footerText {
+            display: inline-flex;
+        }
+
+        div {
+            
+            .derechos {   
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+/*                (DESKTOP - FOOTER)                  */
+@media screen and (min-width: 992px) { 
+    .pieDePagina { 
+        font-size: 22px;
+
+        .footerLogos {
+
+            .comsLogo {
+                width: 60px;
+                height: 70px;
+            }
+        }
+
+        .footerText {
+            display: inline-flex;
+        }
+        
+        div {
+            
+            .derechos {   
+                font-size: 16px;
+            }
+        }
+    }
+}

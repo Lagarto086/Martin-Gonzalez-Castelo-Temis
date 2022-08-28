@@ -1,0 +1,149 @@
+/*                (MOBILE - HEADER)                  */
+
+.cabecera {
+    background-color: $secpmdaryBGColor;
+    
+    .cabeceraLogo { 
+        height: auto;
+        width: 51px;
+    }
+
+    .menuButtons {
+        list-style-type: none;
+        font-size: 16px;
+        height: 150px;
+        display:inline;
+
+        .cabeceraLink {
+
+            a {
+                background: linear-gradient(70deg, rgba(150,0,0,1) 0%, rgba(100,0,0,1) 20%, rgba(100,0,0,1) 100%);
+                display: block;
+                text-decoration: none;
+                color: $primaryFontColor;
+                border-bottom: 1px solid rgb(32, 32, 32);
+                border-left: 1px solid rgb(32, 32, 32);
+                border-radius: 5px;
+                }
+        }
+        
+        .cabeceraLink {
+            a:hover {
+                background: linear-gradient(70deg, rgba(100,0,0,1) 0%, rgba(100,0,0,1) 80%, rgba(150,0,0,1) 100%);
+                border-bottom: 1px solid rgb(214, 214, 214);
+                border-left: 1px solid rgb(214, 214, 214);
+            }
+        }
+    }
+
+    .cabeceraTitulo {
+        font-size: 28px;
+        color: $primaryFontColor;
+        }
+        
+    .cabeceraSubtitulo {
+        font-size: 22px; 
+        color: $primaryFontColor;
+        }
+        
+    .cabeceraSubtitulo2 {
+        font-size: 20px; 
+        color: $primaryFontColor;
+        }
+}
+
+
+
+/*                (TABLET - HEADER)                  */
+
+@media screen and  (min-width: 768px) { 
+    
+    .cabecera {
+
+        .cabeceraLogo { 
+            position: absolute;
+            height: 230px;
+            width: 138px;
+        }
+
+        .cabeceraLink {
+         
+            a {
+                font-size: 28px;
+            }
+        }
+
+        .cabeceraLink {
+            
+            a:hover {
+                font-size: 28px;
+            }
+        }
+
+        .cabeceraTitulo {
+            font-size: 58px;
+        }
+
+        .cabeceraSubtitulo, 
+        .cabeceraSubtitulo2 { 
+            font-size: 42px;
+        }
+    }
+}
+
+
+
+/*                (DESKTOP - HEADER)                  */
+
+@media screen and (min-width: 992px) { 
+    
+    .cabecera {
+
+        .cabeceraLogo { 
+            position: absolute;
+            height: 255px;
+            width: 153px;
+        }    
+
+        .menuButtons {
+            justify-content: space-evenly;
+            font-size: 22px;
+            display: flex;
+            flex-direction: row;
+            height: 80px;
+            
+            .cabeceraLink {
+        
+                a {
+                    display: inline;
+                    font-size: 22px;
+                    border-radius: 10px;
+                    border-bottom: 1px solid rgba(36, 36, 36, 0);
+                    border-top: 1px solid rgba(36, 36, 36, 0);
+                    transition: background-color 1s, color 1s;
+                }
+            }
+        
+            .cabeceraLink {
+        
+                a:hover {
+                    background-color: rgb(186, 129, 129);
+                    color: rgb(77, 74, 74);
+                    font-size: 22px;
+                    border-radius: 10px;
+                    border: rgb(0,0,0,0);
+                }
+            }
+        }
+
+        .cabeceraTitulo {
+            font-size: 72px;
+        }
+
+        .cabeceraSubtitulo,
+        .cabeceraSubtitulo2 { 
+            font-size: 42px;
+        }
+        
+    }
+}
