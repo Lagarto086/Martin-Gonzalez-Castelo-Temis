@@ -1,7 +1,7 @@
 /*                (MOBILE - HEADER)                  */
 
 .cabecera {
-    background-color: $secpmdaryBGColor;
+    background-color: $secondaryBGColor;
     
     .cabeceraLogo { 
         height: auto;
@@ -42,12 +42,12 @@
         }
         
     .cabeceraSubtitulo {
-        font-size: 22px; 
+        font-size: 20px; 
         color: $primaryFontColor;
         }
         
     .cabeceraSubtitulo2 {
-        font-size: 20px; 
+        font-size: 18px; 
         color: $primaryFontColor;
         }
 }

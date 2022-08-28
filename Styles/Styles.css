@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/*Background Colors */
+/*Font Colors */
 /*                (MOBILE - HEADER)                  */
 .cabecera {
   background-color: #640000;
@@ -17,7 +19,7 @@
   background: linear-gradient(70deg, rgb(150, 0, 0) 0%, rgb(100, 0, 0) 20%, rgb(100, 0, 0) 100%);
   display: block;
   text-decoration: none;
-  color: rgb(214, 214, 214);
+  color: #d6d6d6;
   border-bottom: 1px solid rgb(32, 32, 32);
   border-left: 1px solid rgb(32, 32, 32);
   border-radius: 5px;
@@ -29,15 +31,15 @@
 }
 .cabecera .cabeceraTitulo {
   font-size: 28px;
-  color: rgb(214, 214, 214);
+  color: #d6d6d6;
 }
 .cabecera .cabeceraSubtitulo {
-  font-size: 22px;
-  color: rgb(214, 214, 214);
+  font-size: 20px;
+  color: #d6d6d6;
 }
 .cabecera .cabeceraSubtitulo2 {
-  font-size: 20px;
-  color: rgb(214, 214, 214);
+  font-size: 18px;
+  color: #d6d6d6;
 }
 
 /*                (TABLET - HEADER)                  */
@@ -147,13 +149,17 @@
     font-size: 16px;
   }
 }
+* {
+  font-family: "Playfair Display", serif;
+}
+
 /* -------------------- MOBILE-FIRST -------------------- */
 /* INDEX (Mobile) */
 .cuerpoIndex {
   background-color: #ebebeb;
-  color: rgb(32, 32, 32);
 }
 .cuerpoIndex .introduccion {
+  color: #202020;
   font-size: 20px;
   text-indent: 80px;
   text-align: justify;
@@ -163,10 +169,10 @@
   background-position: center;
   background-size: cover;
   font-size: 28px;
-  color: hsla(0deg, 0%, 100%, 0.6);
+  color: #d6d6d6;
 }
 .cuerpoIndex .citas .citaBottom {
-  background-color: rgba(0, 0, 0, 0.66);
+  background-color: rgba(0, 0, 0, 0.5843137255);
   font-style: italic;
 }
 
@@ -180,8 +186,8 @@
   border-radius: 15px;
 }
 .cuerpoServicios .serv__Tipo .serv__TipoTitulo {
-  background-color: rgb(100, 0, 0);
-  color: rgb(214, 214, 214);
+  background-color: #640000;
+  color: #d6d6d6;
   font-size: 24px;
   border-radius: 20px;
 }
@@ -194,7 +200,7 @@
 }
 .cuerpoServicios .serv__Tipo .serv__RamaLista {
   list-style-type: none;
-  color: rgb(214, 214, 214);
+  color: #d6d6d6;
   font-size: 18px;
 }
 
@@ -208,7 +214,7 @@
 }
 .nosotrosCuerpo .nosotros__Subtitulo {
   border-radius: 25px;
-  background-color: rgba(0, 0, 0, 0.697);
+  background-color: rgba(0, 0, 0, 0.5843137255);
   font-size: 26px;
   color: rgb(255, 190, 190);
   -webkit-text-decoration: underline solid 3px rgb(255, 190, 190);
@@ -217,7 +223,7 @@
 .nosotrosCuerpo .nosotros__Texto {
   border-radius: 25px;
   background-color: rgba(69, 54, 54, 0.864);
-  color: rgb(214, 214, 214);
+  color: #d6d6d6;
   font-size: 18px;
   line-height: 2;
   text-align: justify;
@@ -228,17 +234,16 @@
 /* EQUIPO (Mobile) */
 .equipo__Cuerpo {
   background-color: rgb(211, 208, 208);
-  color: rgb(32, 32, 32);
-  font-size: 34px;
+  color: #202020;
 }
 .equipo__Cuerpo .equipo__TituloPrincipal {
-  font-size: 20px;
+  font-size: 32px;
   text-align: center;
   font-style: italic;
 }
 .equipo__Cuerpo .equipo__Tarjeta {
   background-color: rgb(78, 12, 12);
-  color: rgb(214, 214, 214);
+  color: #d6d6d6;
 }
 .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro {
   display: flex;
@@ -260,16 +265,16 @@
   width: 60%;
 }
 .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Filiacion {
-  background-color: rgba(0, 0, 0, 0.537);
+  background-color: rgba(0, 0, 0, 0.5843137255);
 }
 .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Filiacion .equipo__Nombre {
-  font-size: 22px;
+  font-size: 16px;
 }
 .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Filiacion .equipo__Titulo {
-  font-size: 14px;
+  font-size: 12px;
 }
 .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Filiacion .equipo__Cargo {
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
 }
 .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos {
@@ -278,8 +283,8 @@
   line-height: 2;
 }
 .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Cita {
-  background-color: rgba(0, 0, 0, 0.537);
-  color: rgb(214, 214, 214);
+  background-color: rgba(0, 0, 0, 0.5843137255);
+  color: #d6d6d6;
   font-style: italic;
   font-size: 16px;
 }
@@ -292,7 +297,7 @@
 .contact__Formulario {
   border-radius: 25px;
   background-color: rgb(78, 12, 12);
-  color: rgb(245, 245, 220);
+  color: #d6d6d6;
 }
 .contact__Formulario .contact__Subtitulo {
   font-size: 26px;
@@ -335,7 +340,7 @@
   text-indent: 80px;
   text-align: justify;
   line-height: 1.5;
-  color: rgb(245, 245, 220);
+  color: #f5f5dc;
   background-color: rgb(78, 12, 12);
   border-radius: 25px;
 }
@@ -394,7 +399,7 @@
   }
   .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos .equipo__JornadasTitulo {
     display: inline-flex;
-    font-size: 26px;
+    font-size: 22px;
   }
   .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos .equipo__ListaJornadas {
     display: flex;
@@ -406,7 +411,7 @@
   }
   .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos .equipo__SeminariosTitulo {
     display: inline-flex;
-    font-size: 26px;
+    font-size: 22px;
   }
   .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos .equipo__ListaSeminarios {
     display: flex;
@@ -476,31 +481,45 @@
     font-size: 28px;
   }
   /* EQUIPO (DESKTOP) */
-  .equipo__TituloPrincipal {
+  .equipo__Cuerpo .equipo__TituloPrincipal {
     font-size: 48px;
     font-style: italic;
   }
-  .equipo__Nombre {
+  .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Filiacion .equipo__Nombre {
     font-size: 32px;
   }
-  .equipo__Titulo,
-.equipo__Cargo {
+  .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Filiacion .equipo__Titulo,
+.equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Filiacion .equipo__Cargo {
     font-size: 18px;
   }
-  .equipo__Eventos {
+  .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos {
     display: inline-flex;
   }
-  .equipo__Eventos .equipo__JornadasTitulo,
-.equipo__Eventos .equipo__SeminariosTitulo {
+  .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos .equipo__JornadasTitulo {
+    display: inline-flex;
+    font-size: 26px;
+  }
+  .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos .equipo__ListaJornadas {
+    display: flex;
+    flex-direction: column;
+  }
+  .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos .equipo__ListaJornadas .equipo__Jornadas {
     display: inline-flex;
     font-size: 22px;
   }
-  .equipo__Eventos .equipo__Jornadas,
-.equipo__Eventos .equipo__Seminarios {
+  .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos .equipo__SeminariosTitulo {
+    display: inline-flex;
+    font-size: 26px;
+  }
+  .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos .equipo__ListaSeminarios {
+    display: flex;
+    flex-direction: column;
+  }
+  .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos .equipo__ListaSeminarios .equipo__Seminarios {
     display: inline-flex;
     font-size: 22px;
   }
-  .equipo__Cita {
+  .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .Equipo__SeccionCitas .equipo__Cita {
     font-size: 20px;
   }
   /* CONTÁCTENOS (DESKTOP) */

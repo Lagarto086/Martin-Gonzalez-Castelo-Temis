@@ -1,6 +1,6 @@
-@import "./partials/header",
-        "./partials/footer",
-        "./partials/variables";
+@import "./partials/variables",
+        "./partials/header",
+        "./partials/footer";
 
 * {
     font-family: 'Playfair Display', serif;
@@ -13,7 +13,7 @@
 /* INDEX (Mobile) */
 
 .cuerpoIndex {
-    background-color: $secondaryBGColor;
+    background-color: $primaryBGColor;
     
     .introduccion {
         color: $thirdFontColor;
@@ -27,7 +27,7 @@
         background-position: center;
         background-size: cover;
         font-size: 28px;
-        color: $thirdBGColor;
+        color: $primaryFontColor;
 
         .citaBottom { 
             background-color: $thirdBGColor;
@@ -48,7 +48,7 @@
         border-radius: 15px;
 
         .serv__TipoTitulo {
-            background-color: $secpmdaryBGColor;
+            background-color: $secondaryBGColor;
             color:  $primaryFontColor;
             font-size: 24px;
             border-radius: 20px;
@@ -106,11 +106,11 @@
 
 .equipo__Cuerpo {
     background-color: rgb(211, 208, 208);
-    color: $secondaryFontColor;
-    font-size: 34px;
+    color: $thirdFontColor;
+
     
     .equipo__TituloPrincipal {
-        font-size: 20px;
+        font-size: 32px;
         text-align: center;
         font-style: italic;
     }
@@ -134,25 +134,24 @@
                     width: 50%;
                     height: 50%;
                     transition: width 2s;
-                }
-
-                .equipo__Foto:hover {
-                    width: 60%;
-                }
+                    &:hover {
+                        width: 60%;
+                    }
+                }   
 
                 .equipo__Filiacion {
                     background-color:  $thirdBGColor;
                     
                     .equipo__Nombre {
-                        font-size: 22px;
+                        font-size: 16px;
                     }
                     
                     .equipo__Titulo {
-                        font-size: 14px;
+                        font-size: 12px;
                     }
                     
                     .equipo__Cargo {
-                        font-size: 14px;
+                        font-size: 12px;
                         text-align: center;
                     }
                 }
@@ -203,10 +202,9 @@
     .contact__Boton {
         background-color: rgb(245, 245, 220);
         border-radius: 10px;
-    }
-    
-    .contact__Boton:hover {
-        background-color: rgb(255, 233, 233);
+        &:hover {
+            background-color: rgb(255, 233, 233);
+        }
     }
 }
 
@@ -311,12 +309,12 @@
 
                     .equipo__Foto {
                         width: 30%;
+                        &:hover {
+                            width: 35%;
+                        }    
                     }
             
-                    .equipo__Foto:hover {
-                        width: 35%;
-                    }
-
+                    
                     .equipo__Filiacion {
 
                         .equipo__Nombre {
@@ -334,7 +332,7 @@
             
                         .equipo__JornadasTitulo {
                             display: inline-flex;
-                            font-size: 26px;
+                            font-size: 22px;
                         }
             
                         .equipo__ListaJornadas {
@@ -349,7 +347,7 @@
             
                         .equipo__SeminariosTitulo {
                             display: inline-flex;
-                            font-size: 26px;
+                            font-size: 22px;
                         }
             
                         .equipo__ListaSeminarios {
@@ -460,37 +458,74 @@
 
 /* EQUIPO (DESKTOP) */   
 
-    .equipo__TituloPrincipal {
-        font-size: 48px;
-        font-style: italic;
-    }
+    .equipo__Cuerpo {
 
-   .equipo__Nombre {
-        font-size: 32px;
-    }
-    
-    .equipo__Titulo,
-    .equipo__Cargo {
-        font-size: 18px;
-    }
+        .equipo__TituloPrincipal {
+            font-size: 48px;
+            font-style: italic;
+        }
 
-    .equipo__Eventos {
-        display: inline-flex;
-    
-        .equipo__JornadasTitulo,
-        .equipo__SeminariosTitulo {
-            display: inline-flex;
-            font-size: 22px;
+        .equipo__Tarjeta{
+                
+            .equipo__Miembro{
+                
+                .equipo__MiembroDatos{
+
+                    .equipo__Filiacion{
+
+                        .equipo__Nombre {
+                            font-size: 32px;
+                        }
+
+                        .equipo__Titulo,
+                        .equipo__Cargo {
+                            font-size: 18px;
+                        }
+                    }
+                    
+                    .equipo__Eventos {
+                        display: inline-flex;
+            
+                        .equipo__JornadasTitulo {
+                            display: inline-flex;
+                            font-size: 26px;
+                        }
+            
+                        .equipo__ListaJornadas {
+                            display: flex;
+                            flex-direction: column;
+                            
+                            .equipo__Jornadas {
+                                display: inline-flex;
+                                font-size: 22px;
+                            }
+                        }
+            
+                        .equipo__SeminariosTitulo {
+                            display: inline-flex;
+                            font-size: 26px;
+                        }
+            
+                        .equipo__ListaSeminarios {
+                            display: flex;
+                            flex-direction: column;
+                        
+                            .equipo__Seminarios {
+                                display: inline-flex;
+                                font-size: 22px;
+                            }
+                        }
+                    }
+                    
+                    .Equipo__SeccionCitas{
+
+                        .equipo__Cita {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
         }
-        
-        .equipo__Jornadas,
-        .equipo__Seminarios {
-            display: inline-flex;
-            font-size: 22px;
-        }
-    }
-    .equipo__Cita {
-        font-size: 20px;
     }
 
 
