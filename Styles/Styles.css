@@ -55,6 +55,8 @@
   .cabecera .cabeceraLogo {
     height: auto;
     width: 138px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .cabecera .navbar .collapse .menuButtons .cabeceraLink .cabeceraBoton {
     font-size: 28px;
@@ -253,6 +255,8 @@
   color: rgb(255, 190, 190);
   -webkit-text-decoration: underline solid 3px rgb(255, 190, 190);
           text-decoration: underline solid 3px rgb(255, 190, 190);
+  margin: 20px 30px;
+  padding: 10px 20px;
 }
 .nosotrosCuerpo .nosotros__Texto {
   border-radius: 25px;
@@ -263,6 +267,8 @@
   text-align: justify;
   text-justify: inter-word;
   text-indent: 120px;
+  margin: 20px 30px;
+  padding: 10px 20px;
 }
 
 /* EQUIPO (Mobile) */
@@ -519,12 +525,16 @@
     font-size: 28px;
   }
   .contact__Cuerpo div .contact__Formulario .contact__Input {
-    font-size: 18px;
-  }
-  .contact__Cuerpo div .contact__Formulario .contact__Tipo,
-.contact__Cuerpo div .contact__Formulario .contact__Comentario,
-.contact__Cuerpo div .contact__Formulario .contact__TipoTexto {
     font-size: 24px;
+  }
+  .contact__Cuerpo div .contact__Formulario .contact__Comentario,
+.contact__Cuerpo div .contact__Formulario .contact__Tipo,
+.contact__Cuerpo div .contact__Formulario .contact__TipoTexto,
+.contact__Cuerpo div .contact__Formulario .contact__Boton {
+    font-size: 28px;
+  }
+  .contact__Cuerpo div .contact__Otros .contact__SubtituloOtro {
+    font-size: 36px;
   }
   .contact__Cuerpo div .contact__Otros .contact__OtrosTexto {
     font-size: 22px;
@@ -616,28 +626,35 @@
   }
   /* CONTÁCTENOS (DESKTOP) */
   .contact__Cuerpo .contact__Titulo {
-    font-size: 36px;
+    font-size: 42px;
     text-align: center;
     margin-bottom: 15px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
-  .contact__Cuerpo div .contact__Formulario .contact__Subtitulo {
+  .contact__Cuerpo div div .contact__Formulario .contact__Subtitulo {
     font-size: 40px;
     margin-bottom: 50px;
   }
-  .contact__Cuerpo div .contact__Formulario .contact__Input {
-    font-size: 22px;
-  }
-  .contact__Cuerpo div .contact__Formulario .contact__Texto {
-    font-size: 32px;
-  }
-  .contact__Cuerpo div .contact__Formulario .contact__Comentario,
-.contact__Cuerpo div .contact__Formulario .contact__TipoTexto {
+  .contact__Cuerpo div div .contact__Formulario .contact__Input {
     font-size: 24px;
   }
-  .contact__Cuerpo .contact__Otros .contact__OtrosTexto {
-    font-size: 28px;
+  .contact__Cuerpo div div .contact__Formulario .contact__Texto {
+    font-size: 32px;
   }
-  .contact__Cuerpo .contact__Parrafo {
-    font-size: 28px;
+  .contact__Cuerpo div div .contact__Formulario .contact__Comentario,
+.contact__Cuerpo div div .contact__Formulario .contact__Tipo,
+.contact__Cuerpo div div .contact__Formulario .contact__TipoTexto,
+.contact__Cuerpo div div .contact__Formulario .contact__Boton {
+    font-size: 32px;
+  }
+  .contact__Cuerpo div .contact__Otros .contact__SubtituloOtro {
+    font-size: 42px;
+  }
+  .contact__Cuerpo div .contact__Otros .contact__OtrosTexto {
+    font-size: 36px;
+  }
+  .contact__Cuerpo div .contact__Parrafo {
+    font-size: 36px;
   }
 }/*# sourceMappingURL=Styles.css.map */

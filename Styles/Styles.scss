@@ -102,6 +102,8 @@
         font-size: 20px;
         color: rgb(255, 190, 190);
         text-decoration: underline solid 3px rgb(255, 190, 190);
+        margin: 20px 30px;
+        padding: 10px 20px;
     }
 
     .nosotros__Texto {
@@ -113,6 +115,8 @@
         text-align: justify;
         text-justify: inter-word;
         text-indent: 120px;
+        margin: 20px 30px;
+        padding: 10px 20px;
     }
 }
 
@@ -468,17 +472,22 @@
                 }
 
                 .contact__Input {
-                    font-size: 18px;
+                    font-size: 24px;
                 }
 
-                .contact__Tipo,
                 .contact__Comentario,
-                .contact__TipoTexto {
-                    font-size: 24px;
+                .contact__Tipo,
+                .contact__TipoTexto,
+                .contact__Boton {
+                    font-size: 28px;
                 }
             }
 
             .contact__Otros {
+
+                .contact__SubtituloOtro {
+                    font-size: 36px;
+                }
 
                 .contact__OtrosTexto {
                     font-size: 22px;
@@ -627,12 +636,16 @@
     .contact__Cuerpo {
 
         .contact__Titulo {
-            font-size: 36px;
+            font-size: 42px;
             text-align: center;
             margin-bottom: 15px;
+            padding-top: 50px;
+            padding-bottom: 50px;
         }
             
         div {
+
+            div {
 
             .contact__Formulario {
 
@@ -642,7 +655,7 @@
                 }
 
                 .contact__Input {
-                    font-size: 22px;
+                    font-size: 24px;
                 }
 
                 .contact__Texto {
@@ -650,21 +663,28 @@
                 }
 
                 .contact__Comentario,
-                .contact__TipoTexto {
-                    font-size: 24px;
+                .contact__Tipo,
+                .contact__TipoTexto,
+                .contact__Boton {
+                    font-size: 32px;
                 }
             }
         }
         
-        .contact__Otros{
+            .contact__Otros {
 
-            .contact__OtrosTexto {
-                font-size: 28px;
+                .contact__SubtituloOtro {
+                    font-size: 42px;
+                }
+
+                .contact__OtrosTexto {
+                    font-size: 36px;
+                }
             }
-        }
-        
-        .contact__Parrafo {
-            font-size: 28px;
+
+            .contact__Parrafo {
+                font-size: 36px;
+            }
         }
     }
 }
