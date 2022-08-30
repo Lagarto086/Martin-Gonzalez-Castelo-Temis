@@ -10,28 +10,33 @@
 
 /* -------------------- MOBILE-FIRST -------------------- */
 
+
 /* INDEX (Mobile) */
 
 .cuerpoIndex {
     background-color: $primaryBGColor;
-    
+
     .introduccion {
         color: $thirdFontColor;
-        font-size: 20px;
-        text-indent: 80px;
+        font-size: 12px;
+        text-indent: 40px;
         text-align: justify;
     }
 
     .citas {
+        text-align: end;
         background-image: url(https://wallpaperaccess.com/full/702858.jpg);
         background-position: center;
         background-size: cover;
-        font-size: 28px;
+        font-size: 18px;
         color: $primaryFontColor;
+        padding: 30px 15px;
+        margin-bottom: 20px; 
 
         .citaBottom { 
             background-color: $thirdBGColor;
             font-style: italic;
+            padding: 20px;
         }
     }
 }
@@ -42,16 +47,23 @@
 .cuerpoServicios {
     background-image: url(../Imagenes/escritorio.jpg);
     background-size: cover;
+    text-align: center;
+    justify-content: center;
 
     .serv__Tipo {
         background-color: rgba(48, 33, 33, 0.8);
         border-radius: 15px;
-
+        margin-top: 15px;
+        margin-bottom: 10px;
+  
         .serv__TipoTitulo {
             background-color: $secondaryBGColor;
             color:  $primaryFontColor;
-            font-size: 24px;
+            font-size: 18px;
             border-radius: 20px;
+            padding: 10px 20px;
+            margin-top: 5px; 
+            margin-bottom: 5px; 
         }
 
         .serv__Rama {
@@ -59,13 +71,17 @@
             border-radius: 15px;
             list-style-type: none;
             color: rgb(201, 201, 201);
-            font-size: 20px;
+            font-size: 16px;
+            padding: 5px 10px;
+            margin-top: 5px; 
+            margin-bottom: 5px; 
         }
 
         .serv__RamaLista {
             list-style-type: none;
             color: $primaryFontColor;
-            font-size: 18px;
+            font-size: 14px;
+            text-align: start;
         }
     }
 }
@@ -80,11 +96,10 @@
     background-attachment: fixed;
     background-position: right;
 
-
     .nosotros__Subtitulo {
         border-radius: 25px;
         background-color: $thirdBGColor;
-        font-size: 26px;
+        font-size: 20px;
         color: rgb(255, 190, 190);
         text-decoration: underline solid 3px rgb(255, 190, 190);
     }
@@ -93,7 +108,7 @@
         border-radius: 25px;
         background-color: rgba(69, 54, 54, 0.864);
         color:  $primaryFontColor;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 2;
         text-align: justify;
         text-justify: inter-word;
@@ -108,65 +123,72 @@
     background-color: rgb(211, 208, 208);
     color: $thirdFontColor;
 
-    
     .equipo__TituloPrincipal {
-        font-size: 32px;
-        text-align: center;
+        font-size: 22px;
         font-style: italic;
     }
+    
+    div {
+        justify-content: center;
+    
+        .equipo__Tarjeta {
+            background-color: rgb(78, 12, 12);
+            color:  $primaryFontColor;
+            margin-top: 15px;
+            padding: 15px;
 
-    .equipo__Tarjeta {
-        background-color: rgb(78, 12, 12);
-        color:  $primaryFontColor;
-            
-        .equipo__Miembro {
-            display: flex;    
-            background-color: rgb(69, 54, 54);
-            flex-direction: column;
-
-            .equipo__MiembroDatos {
-                text-align: right;
-                line-height: 1;
-                background-size: cover;
-
-                .equipo__Foto {
-                    position: relative;
-                    width: 50%;
-                    height: 50%;
-                    transition: width 2s;
-                    &:hover {
-                        width: 60%;
-                    }
-                }   
-
-                .equipo__Filiacion {
-                    background-color:  $thirdBGColor;
-                    
-                    .equipo__Nombre {
-                        font-size: 16px;
-                    }
-                    
-                    .equipo__Titulo {
-                        font-size: 12px;
-                    }
-                    
-                    .equipo__Cargo {
-                        font-size: 12px;
-                        text-align: center;
-                    }
-                }
+            .equipo__Miembro {
+                display: flex;    
+                background-color: rgb(69, 54, 54);
+                flex-direction: column;      
                 
-                .equipo__Eventos {
-                    display: none;
-                    flex-direction: column;
-                    line-height: 2;
-                }
+                .equipo__MiembroDatos {
+                    text-align: center;
+                    line-height: 1;
+                    background-size: cover;
+                    justify-content: space-evenly;
+                    
+                    .equipo__Foto {
+                        position: relative;
+                        width: 50%;
+                        height: 50%;
+                        transition: width 2s;
+                        &:hover {
+                            width: 55%;
+                        }
+                    }   
 
-                .equipo__Cita {
-                    background-color: $thirdBGColor;
-                    color:  $primaryFontColor;
-                    font-style: italic;  
-                    font-size: 16px;
+                    .equipo__Filiacion {
+                        background-color:  $thirdBGColor;
+                        margin-right: 12px;
+                        padding-top: 15px;
+                        
+                        .equipo__Nombre {
+                            font-size: 16px;
+                        }
+                        
+                        .equipo__Titulo,
+                        .equipo__Cargo {
+                            font-size: 12px;
+                        }
+                    }
+                    
+                    .equipo__Eventos {
+                        display: none;
+                        flex-direction: column;
+                        line-height: 2;
+                    }
+                    
+
+                    .equipo__Cita {
+                        background-color: $thirdBGColor;
+                        color:  $primaryFontColor;
+                        font-style: italic;  
+                        font-size: 12px;   
+                        text-align: end; 
+                        margin-top: 10px;
+                        padding: 10px;
+                    }                    
                 }
             }
         }
@@ -176,66 +198,107 @@
 
 /* CONTÁCTENOS (Mobile) */
 
-.contact__Titulo {
-        font-size: 20px;
-    }
+.contact__Cuerpo {
 
-.contact__Formulario {
-    border-radius: 25px;
-    background-color: rgb(78, 12, 12);
-    color:  $primaryFontColor;
-  
-    .contact__Subtitulo {
-        font-size: 26px;
-    }
-    .contact__Texto,
-    .contact__TipoTexto,
-    .contact__Tipo,
-    .contact__Comentario {
-        font-size: 20px;
-    }
 
-    .contact__Input {
-        font-size: 18px;
+    .contact__Titulo {
+        font-size: 16px;
+        text-justify: 40px;
     }
+   
+    div {     
+        justify-content: space-evenly;
+
+        .contact__Formulario {
+            border-radius: 25px;
+            background-color: rgb(78, 12, 12);
+            color:  $secondaryFontColor;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            align-content: center;
+    
+            .contact__Subtitulo {
+                font-size: 18px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+
+            .contact__Texto,
+            .contact__TipoTexto,
+            .contact__Comentario {
+                font-size: 16px;
+                text-align: left;
+                margin-top: 30px;
+                margin-bottom: 15px;
+            }
+
+            .contact__Tipo {
+                font-size: 18px;
+                margin-left: 10px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .contact__Input {
+                font-size: 16px;
+            }
+                    
+            .contact__Boton {
+                background-color: rgb(245, 245, 220);
+                border-radius: 10px;
+                padding: 10px 20px;
+                &:hover {
+                    background-color: rgb(255, 233, 233);
+                }
+            }
+        }
+
+        .contact__Otros {
+            display: flex;
+            flex-direction: column;
+            border-radius: 22px;
+            background-color: rgb(245, 245, 220);
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            justify-content: space-around;
             
-    .contact__Boton {
-        background-color: rgb(245, 245, 220);
-        border-radius: 10px;
-        &:hover {
-            background-color: rgb(255, 233, 233);
+            .contact__SubtituloOtro {
+                font-size: 18px;
+                text-align: center; 
+            }
+
+            .contact__Foto {
+                border-radius: 25px;
+                width: 80%;
+                height: auto;
+                align-self: center;
+            }
+
+            .contact__OtrosTexto {
+                font-size: 18px;
+                text-align: start;
+            }
+        }
+
+        .contact__Parrafo {
+            font-size: 18px;
+            text-indent: 80px;
+            text-align: justify;
+            line-height: 1.5;
+            color: $secondaryFontColor;
+            background-color: rgb(78, 12, 12);
+            border-radius: 25px;
+            padding: 30px;
         }
     }
 }
 
-.contact__Otros {
-    border-radius: 25px;
-    background-color: rgb(245, 245, 220);
-    
-    .contact__SubtituloOtro {
-        font-size: 26px;
-    }
-
-    .contact__Foto {
-        border-radius: 25px;
-        width: 80%;
-        height: auto;
-    }
-
-    .contact__OtrosTexto {
-        font-size: 20px;
-    }
-}
-
-.contact__Parrafo {
-    font-size: 20px;
-    text-indent: 80px;
-    text-align: justify;
-    line-height: 1.5;
-    color: $secondaryFontColor;
-    background-color: rgb(78, 12, 12);
-    border-radius: 25px;
-}
 
 
 /* -------------------- TABLET MEDIA-QUERRIE -------------------- */
@@ -247,32 +310,37 @@
     .cuerpoIndex {
 
         .introduccion {
-            font-size: 32px;
+            font-size: 24px;
         }
  
         .citas {
-            font-size: 48px;
+            font-size: 36px;
             height: 700px;
+            
+            .citaBottom {
+                margin-top: 300px;
+            }
         }
     }
 
 
 /* SERVICIOS (TABLET) */    
+    
     .cuerpoServicios {
 
         .serv__Tipo {
             border-radius: 25px;
 
             .serv__TipoTitulo {
-                font-size: 32px;
+                font-size: 36px;
             }
 
             .serv__Rama {
-                font-size: 28px;
+                font-size: 32px;
             }
 
             .serv__RamaLista {
-                font-size: 24px;
+                font-size: 28px;
                 line-height: 2;
             }
         }
@@ -284,87 +352,92 @@
     .nosotrosCuerpo {
         
         .nosotros__Subtitulo {
-            font-size: 34px;
+            font-size: 40px;
         }
 
         .nosotros__Texto {
-            font-size: 28px;
+            font-size: 32px;
         }
     }
+
 
 /* EQUIPO (TABLET) */ 
 
     .equipo__Cuerpo {
 
         .equipo__TituloPrincipal {
-            font-size: 48px;
+            font-size: 44px;
             font-style: italic;
         }
 
-        .equipo__Tarjeta {
-
-            .equipo__Miembro{
-
-                .equipo__MiembroDatos{
-
-                    .equipo__Foto {
-                        width: 30%;
-                        &:hover {
-                            width: 35%;
-                        }    
-                    }
+        div {
+            justify-content: space-between;
             
-                    
-                    .equipo__Filiacion {
+            .equipo__Tarjeta {
 
-                        .equipo__Nombre {
-                            font-size: 32px;
+                .equipo__Miembro {
+
+                    .equipo__MiembroDatos {
+
+                        .equipo__Foto {
+                            width: 30%;
+                            &:hover {
+                                width: 35%;
+                            }    
                         }
-            
-                        .equipo__Titulo,
-                        .equipo__Cargo {
-                            font-size: 18px;
-                        }
-                    }
+                
+                        .equipo__Filiacion {
 
-                    .equipo__Eventos {
-                        display: inline-flex;
-            
-                        .equipo__JornadasTitulo {
+                            .equipo__Nombre {
+                                font-size: 32px;
+                            }
+                
+                            .equipo__Titulo,
+                            .equipo__Cargo {
+                                font-size: 24px;
+                            }
+                        }
+
+                        .equipo__Eventos {
                             display: inline-flex;
-                            font-size: 22px;
-                        }
-            
-                        .equipo__ListaJornadas {
-                            display: flex;
-                            flex-direction: column;
+                
+                            .equipo__JornadasTitulo {
+                                display: inline-flex;
+                                font-size: 24px;
+                                text-decoration: underline $primaryFontColor;
+                            }
+                
+                            .equipo__ListaJornadas {
+                                display: flex;
+                                flex-direction: column;
+                                
+                                .equipo__Jornadas {
+                                    display: inline-flex;
+                                    font-size: 20px;
+                                    margin-left: 50px;
+                                }
+                            }
+                
+                            .equipo__SeminariosTitulo {
+                                display: inline-flex;
+                                font-size: 24px;
+                                text-decoration: underline $primaryFontColor;
+                            }
+                
+                            .equipo__ListaSeminarios {
+                                display: flex;
+                                flex-direction: column;
                             
-                            .equipo__Jornadas {
-                                display: inline-flex;
-                                font-size: 20px;
+                                .equipo__Seminarios {
+                                    display: inline-flex;
+                                    font-size: 20px;
+                                    margin-left: 50px;
+                                }
                             }
                         }
-            
-                        .equipo__SeminariosTitulo {
-                            display: inline-flex;
-                            font-size: 22px;
-                        }
-            
-                        .equipo__ListaSeminarios {
-                            display: flex;
-                            flex-direction: column;
-                        
-                            .equipo__Seminarios {
-                                display: inline-flex;
-                                font-size: 20px;
-                            }
-                        }
-                    }
-                    
-                    .Equipo__SeccionCitas{
 
-                        .equipo__Cita {
-                            font-size: 20px;
+                            .equipo__Cita {
+                                font-size: 18px;
                         }
                     }
                 }
@@ -372,45 +445,53 @@
         }
     }
 
+
 /* CONTÁCTENOS (TABLET) */ 
 
-    .contact__Titulo {
-        font-size: 28px;
-    }
-    
-    .contact__Formulario {
-
-        .contact__Subtitulo {
-            font-size: 28px;
-        }
-    
-        .contact__Texto {
-            font-size: 24px;
+    .contact__Cuerpo{
+        
+        .contact__Titulo {
+            font-size: 32px;
+            text-indent: 80px;
         }
 
-        .contact__Input {
-            font-size: 22px;
-        }
+        div {
+        
+            .contact__Formulario {
 
-        .contact__Tipo,
-        .contact__Comentario,
-        .contact__TipoTexto {
-            font-size: 24px;
-        }
-    }
-    .contact__Otros {
-        display: flex;
-        flex-direction: column;
+                .contact__Subtitulo {
+                    font-size: 36px;
+                }
+            
+                .contact__Texto {
+                    font-size: 28px;
+                }
 
-        .contact__OtrosTexto {
-            font-size: 22px;
-        }
-    }
+                .contact__Input {
+                    font-size: 18px;
+                }
 
-    .contact__Parrafo {
-        font-size: 24px;
+                .contact__Tipo,
+                .contact__Comentario,
+                .contact__TipoTexto {
+                    font-size: 24px;
+                }
+            }
+
+            .contact__Otros {
+
+                .contact__OtrosTexto {
+                    font-size: 22px;
+                }
+            }
+
+            .contact__Parrafo {
+                font-size: 24px;
+            }
+        }
     }
 }
+
 
 
 /* -------------------- DESKTOP MEDIA-QUERRIE -------------------- */
@@ -420,39 +501,49 @@
 
 /* INDEX (DESKTOP) */    
 
-.cuerpoIndex {
-    font-size: 30px;
-}
+    .cuerpoIndex {
+        font-size: 32px;
+     
+        .citas {
+            font-size: 42px;
+        }
+    }
 
 
 /* SERVICIOS (DESKTOP) */   
 
-.serv__Tipo {
+    .cuerpoServicios {
+        justify-content: space-evenly;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        
+        .serv__Tipo {
+            border-radius: 25px;
+        
+            .serv__TipoTitulo {
+                font-size: 42px;
+            }
 
-    border-radius: 25px;
-    .serv__TipoTitulo {
-        font-size: 32px;
-    }
+            .serv__Rama {
+                font-size: 36px;
+            }
 
-    .serv__Rama {
-        font-size: 28px;
+            .serv__RamaLista {
+                font-size: 32px;
+                line-height: 2;
+            }
+        }
     }
-
-    .serv__RamaLista {
-        font-size: 24px;
-        line-height: 2;
-    }
-}
 
 
 /* SOBRE NOSOTROS (DESKTOP) */   
 
     .nosotros__Subtitulo {
-        font-size: 34px;
+        font-size: 48px;
     }
 
     .nosotros__Texto {
-        font-size: 28px;
+        font-size: 38px;
     }
 
 
@@ -461,104 +552,119 @@
     .equipo__Cuerpo {
 
         .equipo__TituloPrincipal {
-            font-size: 48px;
+            font-size: 52px;
             font-style: italic;
         }
 
-        .equipo__Tarjeta{
-                
-            .equipo__Miembro{
-                
-                .equipo__MiembroDatos{
+        div {
 
-                    .equipo__Filiacion{
-
-                        .equipo__Nombre {
-                            font-size: 32px;
-                        }
-
-                        .equipo__Titulo,
-                        .equipo__Cargo {
-                            font-size: 18px;
-                        }
-                    }
+            .equipo__Tarjeta {
                     
-                    .equipo__Eventos {
-                        display: inline-flex;
-            
-                        .equipo__JornadasTitulo {
-                            display: inline-flex;
-                            font-size: 26px;
-                        }
-            
-                        .equipo__ListaJornadas {
-                            display: flex;
-                            flex-direction: column;
-                            
-                            .equipo__Jornadas {
-                                display: inline-flex;
-                                font-size: 22px;
+                .equipo__Miembro {
+                    
+                    .equipo__MiembroDatos {
+                        justify-content: center ;
+
+                        .equipo__Filiacion {
+
+                            .equipo__Nombre {
+                                font-size: 42px;
+                            }
+
+                            .equipo__Titulo,
+                            .equipo__Cargo {
+                                font-size: 30px;
                             }
                         }
-            
-                        .equipo__SeminariosTitulo {
-                            display: inline-flex;
-                            font-size: 26px;
-                        }
-            
-                        .equipo__ListaSeminarios {
-                            display: flex;
-                            flex-direction: column;
                         
-                            .equipo__Seminarios {
+                        .equipo__Eventos {
+                            display: inline-flex;
+                            text-align: start;
+                
+                            .equipo__JornadasTitulo {
                                 display: inline-flex;
-                                font-size: 22px;
+                                font-size: 32px;
+                            }
+                
+                            .equipo__ListaJornadas {
+                                display: flex;
+                                flex-direction: column;
+                                
+                                .equipo__Jornadas {
+                                    display: inline-flex;
+                                    font-size: 28px;
+                                }
+                            }
+                
+                            .equipo__SeminariosTitulo {
+                                display: inline-flex;
+                                font-size: 32px;
+                            }
+                
+                            .equipo__ListaSeminarios {
+                                display: flex;
+                                flex-direction: column;
+                            
+                                .equipo__Seminarios {
+                                    display: inline-flex;
+                                    font-size: 28px;
+                                }
                             }
                         }
-                    }
-                    
-                    .Equipo__SeccionCitas{
 
-                        .equipo__Cita {
-                            font-size: 20px;
+                            .equipo__Cita {
+                                font-size: 24px;
                         }
                     }
-                }
+                }   
             }
-        }
+        } 
     }
 
 
 /* CONTÁCTENOS (DESKTOP) */  
 
-    .contact__Titulo {
-        font-size: 28px;
-    }
+    .contact__Cuerpo {
 
-    .contact__Subtitulo {
-        font-size: 28px;
-        margin-bottom: 50px;
-    }
+        .contact__Titulo {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+            
+        div {
 
-    .contact__Input {
-        font-size: 22px;
-    }
+            .contact__Formulario {
 
-    .contact__Texto {
-        font-size: 24px;
-    }
+                .contact__Subtitulo {
+                    font-size: 40px;
+                    margin-bottom: 50px;
+                }
 
-    .contact__OtrosTexto {
-        font-size: 24px;
-    }
+                .contact__Input {
+                    font-size: 22px;
+                }
 
-    .contact__Parrafo {
-        font-size: 24px;
-    }
+                .contact__Texto {
+                    font-size: 32px;
+                }
 
-    .contact__Tipo,
-    .contact__Comentario,
-    .contact__TipoTexto {
-        font-size: 24px;
+                .contact__Comentario,
+                .contact__TipoTexto {
+                    font-size: 24px;
+                }
+            }
+        }
+        
+        .contact__Otros{
+
+            .contact__OtrosTexto {
+                font-size: 28px;
+            }
+        }
+        
+        .contact__Parrafo {
+            font-size: 28px;
+        }
     }
 }

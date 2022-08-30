@@ -4,63 +4,74 @@
 /*                (MOBILE - HEADER)                  */
 .cabecera {
   background-color: #640000;
+  align-items: center;
 }
 .cabecera .cabeceraLogo {
   height: auto;
   width: 51px;
 }
-.cabecera .menuButtons {
+.cabecera .navbar .collapse .menuButtons {
   list-style-type: none;
-  font-size: 16px;
   height: 150px;
   display: inline;
 }
-.cabecera .menuButtons .cabeceraLink a {
-  background: linear-gradient(70deg, rgb(150, 0, 0) 0%, rgb(100, 0, 0) 20%, rgb(100, 0, 0) 100%);
-  display: block;
+.cabecera .navbar .collapse .menuButtons .cabeceraLink .cabeceraBoton {
   text-decoration: none;
+  display: block;
+  background: linear-gradient(70deg, rgb(150, 0, 0) 0%, rgb(100, 0, 0) 20%, rgb(100, 0, 0) 100%);
+  font-size: 14px;
   color: #d6d6d6;
   border-bottom: 1px solid rgb(32, 32, 32);
   border-left: 1px solid rgb(32, 32, 32);
   border-radius: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-.cabecera .menuButtons .cabeceraLink a:hover {
+.cabecera .navbar .collapse .menuButtons .cabeceraLink .cabeceraBoton:hover {
   background: linear-gradient(70deg, rgb(100, 0, 0) 0%, rgb(100, 0, 0) 80%, rgb(150, 0, 0) 100%);
   border-bottom: 1px solid rgb(214, 214, 214);
   border-left: 1px solid rgb(214, 214, 214);
 }
 .cabecera .cabeceraTitulo {
-  font-size: 28px;
+  font-size: 26px;
   color: #d6d6d6;
+  text-align: center;
 }
 .cabecera .cabeceraSubtitulo {
-  font-size: 20px;
+  font-size: 16px;
   color: #d6d6d6;
+  text-align: center;
 }
 .cabecera .cabeceraSubtitulo2 {
-  font-size: 18px;
+  font-size: 12px;
   color: #d6d6d6;
+  text-align: center;
 }
 
 /*                (TABLET - HEADER)                  */
 @media screen and (min-width: 768px) {
   .cabecera .cabeceraLogo {
-    position: absolute;
-    height: 230px;
+    height: auto;
     width: 138px;
   }
-  .cabecera .cabeceraLink a {
+  .cabecera .navbar .collapse .menuButtons .cabeceraLink .cabeceraBoton {
     font-size: 28px;
   }
-  .cabecera .cabeceraLink a:hover {
-    font-size: 28px;
+  .cabecera .navbar .collapse .menuButtons .cabeceraLink .cabeceraBoton:hover {
+    background: linear-gradient(70deg, rgb(100, 0, 0) 0%, rgb(100, 0, 0) 80%, rgb(150, 0, 0) 100%);
+    border-bottom: 1px solid rgb(214, 214, 214);
+    border-left: 1px solid rgb(214, 214, 214);
   }
   .cabecera .cabeceraTitulo {
-    font-size: 58px;
+    font-size: 52px;
   }
-  .cabecera .cabeceraSubtitulo,
-.cabecera .cabeceraSubtitulo2 {
-    font-size: 42px;
+  .cabecera .cabeceraSubtitulo {
+    font-size: 32px;
+  }
+  .cabecera .cabeceraSubtitulo2 {
+    font-size: 24px;
   }
 }
 /*                (DESKTOP - HEADER)                  */
@@ -69,52 +80,60 @@
     position: absolute;
     height: 255px;
     width: 153px;
+    margin-top: 15px;
+    margin-left: 15px;
   }
-  .cabecera .menuButtons {
-    justify-content: space-evenly;
-    font-size: 22px;
+  .cabecera .navbar .collapse .menuButtons {
+    justify-content: space-around;
     display: flex;
     flex-direction: row;
     height: 80px;
+    margin-top: 50px;
   }
-  .cabecera .menuButtons .cabeceraLink a {
-    display: inline;
-    font-size: 22px;
+  .cabecera .navbar .collapse .menuButtons .cabeceraLink .cabeceraBoton {
+    font-size: 32px;
     border-radius: 10px;
     border-bottom: 1px solid rgba(36, 36, 36, 0);
     border-top: 1px solid rgba(36, 36, 36, 0);
+    padding: 10px 20px;
     transition: background-color 1s, color 1s;
   }
-  .cabecera .menuButtons .cabeceraLink a:hover {
+  .cabecera .navbar .collapse .menuButtons .cabeceraLink .cabeceraBoton:hover {
     background-color: rgb(186, 129, 129);
     color: rgb(77, 74, 74);
-    font-size: 22px;
     border-radius: 10px;
     border: rgba(0, 0, 0, 0);
   }
   .cabecera .cabeceraTitulo {
     font-size: 72px;
   }
-  .cabecera .cabeceraSubtitulo,
-.cabecera .cabeceraSubtitulo2 {
-    font-size: 42px;
+  .cabecera .cabeceraSubtitulo {
+    font-size: 38px;
+  }
+  .cabecera .cabeceraSubtitulo2 {
+    font-size: 28px;
   }
 }
 /*                (MOBILE - FOOTER)                  */
 .pieDePagina {
   background-color: rgb(100, 0, 0);
   color: rgb(214, 214, 214);
-  font-size: 10px;
+  text-align: center;
 }
 .pieDePagina .footerLogos .comsLogo {
-  width: 24px;
+  width: auto;
   height: 28px;
+  margin: 20px 5px;
 }
 .pieDePagina .footerText {
   display: none;
 }
-.pieDePagina div .derechos {
-  font-size: 12px;
+.pieDePagina .derechos {
+  text-align: center;
+  color: #d6d6d6;
+  font-size: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /*                (TABLET - FOOTER)                  */
@@ -129,7 +148,7 @@
   .pieDePagina .footerText {
     display: inline-flex;
   }
-  .pieDePagina div .derechos {
+  .pieDePagina .derechos {
     font-size: 16px;
   }
 }
@@ -145,8 +164,8 @@
   .pieDePagina .footerText {
     display: inline-flex;
   }
-  .pieDePagina div .derechos {
-    font-size: 16px;
+  .pieDePagina .derechos {
+    font-size: 20px;
   }
 }
 * {
@@ -160,48 +179,63 @@
 }
 .cuerpoIndex .introduccion {
   color: #202020;
-  font-size: 20px;
-  text-indent: 80px;
+  font-size: 12px;
+  text-indent: 40px;
   text-align: justify;
 }
 .cuerpoIndex .citas {
+  text-align: end;
   background-image: url(https://wallpaperaccess.com/full/702858.jpg);
   background-position: center;
   background-size: cover;
-  font-size: 28px;
+  font-size: 18px;
   color: #d6d6d6;
+  padding: 30px 15px;
+  margin-bottom: 20px;
 }
 .cuerpoIndex .citas .citaBottom {
   background-color: rgba(0, 0, 0, 0.5843137255);
   font-style: italic;
+  padding: 20px;
 }
 
 /* SERVICIOS (Mobile) */
 .cuerpoServicios {
   background-image: url(../Imagenes/escritorio.jpg);
   background-size: cover;
+  text-align: center;
+  justify-content: center;
 }
 .cuerpoServicios .serv__Tipo {
   background-color: rgba(48, 33, 33, 0.8);
   border-radius: 15px;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 .cuerpoServicios .serv__Tipo .serv__TipoTitulo {
   background-color: #640000;
   color: #d6d6d6;
-  font-size: 24px;
+  font-size: 18px;
   border-radius: 20px;
+  padding: 10px 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .cuerpoServicios .serv__Tipo .serv__Rama {
   background-color: rgba(255, 0, 0, 0.1);
   border-radius: 15px;
   list-style-type: none;
   color: rgb(201, 201, 201);
-  font-size: 20px;
+  font-size: 16px;
+  padding: 5px 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .cuerpoServicios .serv__Tipo .serv__RamaLista {
   list-style-type: none;
   color: #d6d6d6;
-  font-size: 18px;
+  font-size: 14px;
+  text-align: start;
 }
 
 /* SOBRE NOSOTROS (Mobile) */
@@ -215,7 +249,7 @@
 .nosotrosCuerpo .nosotros__Subtitulo {
   border-radius: 25px;
   background-color: rgba(0, 0, 0, 0.5843137255);
-  font-size: 26px;
+  font-size: 20px;
   color: rgb(255, 190, 190);
   -webkit-text-decoration: underline solid 3px rgb(255, 190, 190);
           text-decoration: underline solid 3px rgb(255, 190, 190);
@@ -224,7 +258,7 @@
   border-radius: 25px;
   background-color: rgba(69, 54, 54, 0.864);
   color: #d6d6d6;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 2;
   text-align: justify;
   text-justify: inter-word;
@@ -237,219 +271,265 @@
   color: #202020;
 }
 .equipo__Cuerpo .equipo__TituloPrincipal {
-  font-size: 32px;
-  text-align: center;
+  font-size: 22px;
   font-style: italic;
 }
-.equipo__Cuerpo .equipo__Tarjeta {
+.equipo__Cuerpo div {
+  justify-content: center;
+}
+.equipo__Cuerpo div .equipo__Tarjeta {
   background-color: rgb(78, 12, 12);
   color: #d6d6d6;
+  margin-top: 15px;
+  padding: 15px;
 }
-.equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro {
+.equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro {
   display: flex;
   background-color: rgb(69, 54, 54);
   flex-direction: column;
 }
-.equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos {
-  text-align: right;
+.equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos {
+  text-align: center;
   line-height: 1;
   background-size: cover;
+  justify-content: space-evenly;
 }
-.equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Foto {
+.equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Foto {
   position: relative;
   width: 50%;
   height: 50%;
   transition: width 2s;
 }
-.equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Foto:hover {
-  width: 60%;
+.equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Foto:hover {
+  width: 55%;
 }
-.equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Filiacion {
+.equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Filiacion {
   background-color: rgba(0, 0, 0, 0.5843137255);
+  margin-right: 12px;
+  padding-top: 15px;
 }
-.equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Filiacion .equipo__Nombre {
+.equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Filiacion .equipo__Nombre {
   font-size: 16px;
 }
-.equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Filiacion .equipo__Titulo {
+.equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Filiacion .equipo__Titulo,
+.equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Filiacion .equipo__Cargo {
   font-size: 12px;
 }
-.equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Filiacion .equipo__Cargo {
-  font-size: 12px;
-  text-align: center;
-}
-.equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos {
+.equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos {
   display: none;
   flex-direction: column;
   line-height: 2;
 }
-.equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Cita {
+.equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Cita {
   background-color: rgba(0, 0, 0, 0.5843137255);
   color: #d6d6d6;
   font-style: italic;
-  font-size: 16px;
+  font-size: 12px;
+  text-align: end;
+  margin-top: 10px;
+  padding: 10px;
 }
 
 /* CONTÁCTENOS (Mobile) */
-.contact__Titulo {
-  font-size: 20px;
+.contact__Cuerpo .contact__Titulo {
+  font-size: 16px;
+  text-justify: 40px;
 }
-
-.contact__Formulario {
+.contact__Cuerpo div {
+  justify-content: space-evenly;
+}
+.contact__Cuerpo div .contact__Formulario {
   border-radius: 25px;
   background-color: rgb(78, 12, 12);
-  color: #d6d6d6;
+  color: #f5f5dc;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  align-content: center;
 }
-.contact__Formulario .contact__Subtitulo {
-  font-size: 26px;
-}
-.contact__Formulario .contact__Texto,
-.contact__Formulario .contact__TipoTexto,
-.contact__Formulario .contact__Tipo,
-.contact__Formulario .contact__Comentario {
-  font-size: 20px;
-}
-.contact__Formulario .contact__Input {
+.contact__Cuerpo div .contact__Formulario .contact__Subtitulo {
   font-size: 18px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
-.contact__Formulario .contact__Boton {
+.contact__Cuerpo div .contact__Formulario .contact__Texto,
+.contact__Cuerpo div .contact__Formulario .contact__TipoTexto,
+.contact__Cuerpo div .contact__Formulario .contact__Comentario {
+  font-size: 16px;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.contact__Cuerpo div .contact__Formulario .contact__Tipo {
+  font-size: 18px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.contact__Cuerpo div .contact__Formulario .contact__Input {
+  font-size: 16px;
+}
+.contact__Cuerpo div .contact__Formulario .contact__Boton {
   background-color: rgb(245, 245, 220);
   border-radius: 10px;
+  padding: 10px 20px;
 }
-.contact__Formulario .contact__Boton:hover {
+.contact__Cuerpo div .contact__Formulario .contact__Boton:hover {
   background-color: rgb(255, 233, 233);
 }
-
-.contact__Otros {
-  border-radius: 25px;
+.contact__Cuerpo div .contact__Otros {
+  display: flex;
+  flex-direction: column;
+  border-radius: 22px;
   background-color: rgb(245, 245, 220);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  justify-content: space-around;
 }
-.contact__Otros .contact__SubtituloOtro {
-  font-size: 26px;
+.contact__Cuerpo div .contact__Otros .contact__SubtituloOtro {
+  font-size: 18px;
+  text-align: center;
 }
-.contact__Otros .contact__Foto {
+.contact__Cuerpo div .contact__Otros .contact__Foto {
   border-radius: 25px;
   width: 80%;
   height: auto;
+  align-self: center;
 }
-.contact__Otros .contact__OtrosTexto {
-  font-size: 20px;
+.contact__Cuerpo div .contact__Otros .contact__OtrosTexto {
+  font-size: 18px;
+  text-align: start;
 }
-
-.contact__Parrafo {
-  font-size: 20px;
+.contact__Cuerpo div .contact__Parrafo {
+  font-size: 18px;
   text-indent: 80px;
   text-align: justify;
   line-height: 1.5;
   color: #f5f5dc;
   background-color: rgb(78, 12, 12);
   border-radius: 25px;
+  padding: 30px;
 }
 
 /* -------------------- TABLET MEDIA-QUERRIE -------------------- */
 @media screen and (min-width: 768px) {
   /* INDEX (TABLET) */
   .cuerpoIndex .introduccion {
-    font-size: 32px;
+    font-size: 24px;
   }
   .cuerpoIndex .citas {
-    font-size: 48px;
+    font-size: 36px;
     height: 700px;
+  }
+  .cuerpoIndex .citas .citaBottom {
+    margin-top: 300px;
   }
   /* SERVICIOS (TABLET) */
   .cuerpoServicios .serv__Tipo {
     border-radius: 25px;
   }
   .cuerpoServicios .serv__Tipo .serv__TipoTitulo {
-    font-size: 32px;
+    font-size: 36px;
   }
   .cuerpoServicios .serv__Tipo .serv__Rama {
-    font-size: 28px;
+    font-size: 32px;
   }
   .cuerpoServicios .serv__Tipo .serv__RamaLista {
-    font-size: 24px;
+    font-size: 28px;
     line-height: 2;
   }
   /* SOBRE NOSOTROS (TABLET) */
   .nosotrosCuerpo .nosotros__Subtitulo {
-    font-size: 34px;
+    font-size: 40px;
   }
   .nosotrosCuerpo .nosotros__Texto {
-    font-size: 28px;
+    font-size: 32px;
   }
   /* EQUIPO (TABLET) */
   .equipo__Cuerpo .equipo__TituloPrincipal {
-    font-size: 48px;
+    font-size: 44px;
     font-style: italic;
   }
-  .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Foto {
+  .equipo__Cuerpo div {
+    justify-content: space-between;
+  }
+  .equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Foto {
     width: 30%;
   }
-  .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Foto:hover {
+  .equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Foto:hover {
     width: 35%;
   }
-  .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Filiacion .equipo__Nombre {
+  .equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Filiacion .equipo__Nombre {
     font-size: 32px;
   }
-  .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Filiacion .equipo__Titulo,
-.equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Filiacion .equipo__Cargo {
+  .equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Filiacion .equipo__Titulo,
+.equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Filiacion .equipo__Cargo {
+    font-size: 24px;
+  }
+  .equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos {
+    display: inline-flex;
+  }
+  .equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos .equipo__JornadasTitulo {
+    display: inline-flex;
+    font-size: 24px;
+    -webkit-text-decoration: underline #d6d6d6;
+            text-decoration: underline #d6d6d6;
+  }
+  .equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos .equipo__ListaJornadas {
+    display: flex;
+    flex-direction: column;
+  }
+  .equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos .equipo__ListaJornadas .equipo__Jornadas {
+    display: inline-flex;
+    font-size: 20px;
+    margin-left: 50px;
+  }
+  .equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos .equipo__SeminariosTitulo {
+    display: inline-flex;
+    font-size: 24px;
+    -webkit-text-decoration: underline #d6d6d6;
+            text-decoration: underline #d6d6d6;
+  }
+  .equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos .equipo__ListaSeminarios {
+    display: flex;
+    flex-direction: column;
+  }
+  .equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos .equipo__ListaSeminarios .equipo__Seminarios {
+    display: inline-flex;
+    font-size: 20px;
+    margin-left: 50px;
+  }
+  .equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Cita {
     font-size: 18px;
   }
-  .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos {
-    display: inline-flex;
-  }
-  .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos .equipo__JornadasTitulo {
-    display: inline-flex;
-    font-size: 22px;
-  }
-  .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos .equipo__ListaJornadas {
-    display: flex;
-    flex-direction: column;
-  }
-  .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos .equipo__ListaJornadas .equipo__Jornadas {
-    display: inline-flex;
-    font-size: 20px;
-  }
-  .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos .equipo__SeminariosTitulo {
-    display: inline-flex;
-    font-size: 22px;
-  }
-  .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos .equipo__ListaSeminarios {
-    display: flex;
-    flex-direction: column;
-  }
-  .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos .equipo__ListaSeminarios .equipo__Seminarios {
-    display: inline-flex;
-    font-size: 20px;
-  }
-  .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .Equipo__SeccionCitas .equipo__Cita {
-    font-size: 20px;
-  }
   /* CONTÁCTENOS (TABLET) */
-  .contact__Titulo {
+  .contact__Cuerpo .contact__Titulo {
+    font-size: 32px;
+    text-indent: 80px;
+  }
+  .contact__Cuerpo div .contact__Formulario .contact__Subtitulo {
+    font-size: 36px;
+  }
+  .contact__Cuerpo div .contact__Formulario .contact__Texto {
     font-size: 28px;
   }
-  .contact__Formulario .contact__Subtitulo {
-    font-size: 28px;
+  .contact__Cuerpo div .contact__Formulario .contact__Input {
+    font-size: 18px;
   }
-  .contact__Formulario .contact__Texto {
+  .contact__Cuerpo div .contact__Formulario .contact__Tipo,
+.contact__Cuerpo div .contact__Formulario .contact__Comentario,
+.contact__Cuerpo div .contact__Formulario .contact__TipoTexto {
     font-size: 24px;
   }
-  .contact__Formulario .contact__Input {
+  .contact__Cuerpo div .contact__Otros .contact__OtrosTexto {
     font-size: 22px;
   }
-  .contact__Formulario .contact__Tipo,
-.contact__Formulario .contact__Comentario,
-.contact__Formulario .contact__TipoTexto {
-    font-size: 24px;
-  }
-  .contact__Otros {
-    display: flex;
-    flex-direction: column;
-  }
-  .contact__Otros .contact__OtrosTexto {
-    font-size: 22px;
-  }
-  .contact__Parrafo {
+  .contact__Cuerpo div .contact__Parrafo {
     font-size: 24px;
   }
 }
@@ -457,94 +537,107 @@
 @media screen and (min-width: 992px) {
   /* INDEX (DESKTOP) */
   .cuerpoIndex {
-    font-size: 30px;
-  }
-  /* SERVICIOS (DESKTOP) */
-  .serv__Tipo {
-    border-radius: 25px;
-  }
-  .serv__Tipo .serv__TipoTitulo {
     font-size: 32px;
   }
-  .serv__Tipo .serv__Rama {
-    font-size: 28px;
+  .cuerpoIndex .citas {
+    font-size: 42px;
   }
-  .serv__Tipo .serv__RamaLista {
-    font-size: 24px;
+  /* SERVICIOS (DESKTOP) */
+  .cuerpoServicios {
+    justify-content: space-evenly;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .cuerpoServicios .serv__Tipo {
+    border-radius: 25px;
+  }
+  .cuerpoServicios .serv__Tipo .serv__TipoTitulo {
+    font-size: 42px;
+  }
+  .cuerpoServicios .serv__Tipo .serv__Rama {
+    font-size: 36px;
+  }
+  .cuerpoServicios .serv__Tipo .serv__RamaLista {
+    font-size: 32px;
     line-height: 2;
   }
   /* SOBRE NOSOTROS (DESKTOP) */
   .nosotros__Subtitulo {
-    font-size: 34px;
+    font-size: 48px;
   }
   .nosotros__Texto {
-    font-size: 28px;
+    font-size: 38px;
   }
   /* EQUIPO (DESKTOP) */
   .equipo__Cuerpo .equipo__TituloPrincipal {
-    font-size: 48px;
+    font-size: 52px;
     font-style: italic;
   }
-  .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Filiacion .equipo__Nombre {
+  .equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos {
+    justify-content: center;
+  }
+  .equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Filiacion .equipo__Nombre {
+    font-size: 42px;
+  }
+  .equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Filiacion .equipo__Titulo,
+.equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Filiacion .equipo__Cargo {
+    font-size: 30px;
+  }
+  .equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos {
+    display: inline-flex;
+    text-align: start;
+  }
+  .equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos .equipo__JornadasTitulo {
+    display: inline-flex;
     font-size: 32px;
   }
-  .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Filiacion .equipo__Titulo,
-.equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Filiacion .equipo__Cargo {
-    font-size: 18px;
-  }
-  .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos {
-    display: inline-flex;
-  }
-  .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos .equipo__JornadasTitulo {
-    display: inline-flex;
-    font-size: 26px;
-  }
-  .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos .equipo__ListaJornadas {
+  .equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos .equipo__ListaJornadas {
     display: flex;
     flex-direction: column;
   }
-  .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos .equipo__ListaJornadas .equipo__Jornadas {
+  .equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos .equipo__ListaJornadas .equipo__Jornadas {
     display: inline-flex;
-    font-size: 22px;
+    font-size: 28px;
   }
-  .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos .equipo__SeminariosTitulo {
+  .equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos .equipo__SeminariosTitulo {
     display: inline-flex;
-    font-size: 26px;
+    font-size: 32px;
   }
-  .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos .equipo__ListaSeminarios {
+  .equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos .equipo__ListaSeminarios {
     display: flex;
     flex-direction: column;
   }
-  .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos .equipo__ListaSeminarios .equipo__Seminarios {
+  .equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Eventos .equipo__ListaSeminarios .equipo__Seminarios {
     display: inline-flex;
-    font-size: 22px;
+    font-size: 28px;
   }
-  .equipo__Cuerpo .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .Equipo__SeccionCitas .equipo__Cita {
-    font-size: 20px;
+  .equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Cita {
+    font-size: 24px;
   }
   /* CONTÁCTENOS (DESKTOP) */
-  .contact__Titulo {
-    font-size: 28px;
+  .contact__Cuerpo .contact__Titulo {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 15px;
   }
-  .contact__Subtitulo {
-    font-size: 28px;
+  .contact__Cuerpo div .contact__Formulario .contact__Subtitulo {
+    font-size: 40px;
     margin-bottom: 50px;
   }
-  .contact__Input {
+  .contact__Cuerpo div .contact__Formulario .contact__Input {
     font-size: 22px;
   }
-  .contact__Texto {
+  .contact__Cuerpo div .contact__Formulario .contact__Texto {
+    font-size: 32px;
+  }
+  .contact__Cuerpo div .contact__Formulario .contact__Comentario,
+.contact__Cuerpo div .contact__Formulario .contact__TipoTexto {
     font-size: 24px;
   }
-  .contact__OtrosTexto {
-    font-size: 24px;
+  .contact__Cuerpo .contact__Otros .contact__OtrosTexto {
+    font-size: 28px;
   }
-  .contact__Parrafo {
-    font-size: 24px;
-  }
-  .contact__Tipo,
-.contact__Comentario,
-.contact__TipoTexto {
-    font-size: 24px;
+  .contact__Cuerpo .contact__Parrafo {
+    font-size: 28px;
   }
 }/*# sourceMappingURL=Styles.css.map */
