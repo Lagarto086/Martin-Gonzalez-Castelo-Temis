@@ -183,7 +183,7 @@
 /* -------------------- MOBILE-FIRST -------------------- */
 /* INDEX (Mobile) */
 .cuerpoIndex {
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(220, 218, 218);
 }
 .cuerpoIndex .introduccion {
   color: rgb(32, 32, 32);
@@ -275,7 +275,7 @@
 
 /* EQUIPO (Mobile) */
 .equipo__Cuerpo {
-  background-color: rgb(211, 208, 208);
+  background-color: rgb(220, 218, 218);
   color: rgb(32, 32, 32);
 }
 .equipo__Cuerpo .equipo__TituloPrincipal {
@@ -339,6 +339,9 @@
 }
 
 /* CONTÁCTENOS (Mobile) */
+.contact__Cuerpo {
+  background-color: rgb(220, 218, 218);
+}
 .contact__Cuerpo .contact__Titulo {
   font-size: 16px;
   text-justify: 40px;
@@ -382,7 +385,7 @@
   font-size: 16px;
 }
 .contact__Cuerpo div .contact__Formulario .contact__Boton {
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(220, 218, 218);
 }
 .contact__Cuerpo div .contact__Formulario .contact__Boton:hover {
   background-color: rgb(245, 245, 220);

@@ -125,7 +125,7 @@
 /* EQUIPO (Mobile) */
 
 .equipo__Cuerpo {
-    background-color: rgb(211, 208, 208);
+    background-color: map-get($fondo, primaryBGColor);
     color: $thirdFontColor;
 
     .equipo__TituloPrincipal {
@@ -202,7 +202,7 @@
 /* CONTÁCTENOS (Mobile) */
 
 .contact__Cuerpo {
-
+    background-color: map-get($fondo, primaryBGColor);
 
     .contact__Titulo {
         font-size: 16px;
