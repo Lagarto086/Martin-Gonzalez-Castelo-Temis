@@ -1,7 +1,7 @@
 /*                (MOBILE - HEADER)                  */
 
 .cabecera {
-    background-color: $secondaryBGColor;
+    background-color: map-get($fondo, secondaryBGColor);
     align-items: center;
     
     .cabeceraLogo { 
@@ -62,7 +62,6 @@
         text-align: center;
     }
 }
-
 
 
 /*                (TABLET - HEADER)                  */
@@ -150,7 +149,7 @@
                             padding: 10px 20px;
                             transition: background-color 1s, color 1s;
                             &:hover {
-                                background-color: rgb(186, 129, 129);
+                                background-color: map-get($fondo, fourthBGColor);
                                 color: rgb(77, 74, 74);
                                 border-radius: 10px;
                                 border: rgb(0,0,0,0);

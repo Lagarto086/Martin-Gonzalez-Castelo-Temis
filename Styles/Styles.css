@@ -1,9 +1,15 @@
 @charset "UTF-8";
-/*Background Colors */
 /*Font Colors */
+.contact__Cuerpo div .contact__Formulario .contact__Boton, .cuerpoServicios .serv__Tipo .serv__TipoTitulo {
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 /*                (MOBILE - HEADER)                  */
 .cabecera {
-  background-color: #640000;
+  background-color: rgb(100, 0, 0);
   align-items: center;
 }
 .cabecera .cabeceraLogo {
@@ -177,10 +183,10 @@
 /* -------------------- MOBILE-FIRST -------------------- */
 /* INDEX (Mobile) */
 .cuerpoIndex {
-  background-color: #ebebeb;
+  background-color: rgb(235, 235, 235);
 }
 .cuerpoIndex .introduccion {
-  color: #202020;
+  color: rgb(32, 32, 32);
   font-size: 12px;
   text-indent: 40px;
   text-align: justify;
@@ -196,7 +202,7 @@
   margin-bottom: 20px;
 }
 .cuerpoIndex .citas .citaBottom {
-  background-color: rgba(0, 0, 0, 0.5843137255);
+  background-color: rgba(0, 0, 0, 0.584);
   font-style: italic;
   padding: 20px;
 }
@@ -215,13 +221,9 @@
   margin-bottom: 10px;
 }
 .cuerpoServicios .serv__Tipo .serv__TipoTitulo {
-  background-color: #640000;
+  background-color: rgb(100, 0, 0);
   color: #d6d6d6;
   font-size: 18px;
-  border-radius: 20px;
-  padding: 10px 20px;
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
 .cuerpoServicios .serv__Tipo .serv__Rama {
   background-color: rgba(255, 0, 0, 0.1);
@@ -250,7 +252,7 @@
 }
 .nosotrosCuerpo .nosotros__Subtitulo {
   border-radius: 25px;
-  background-color: rgba(0, 0, 0, 0.5843137255);
+  background-color: rgba(0, 0, 0, 0.584);
   font-size: 20px;
   color: rgb(255, 190, 190);
   -webkit-text-decoration: underline solid 3px rgb(255, 190, 190);
@@ -274,7 +276,7 @@
 /* EQUIPO (Mobile) */
 .equipo__Cuerpo {
   background-color: rgb(211, 208, 208);
-  color: #202020;
+  color: rgb(32, 32, 32);
 }
 .equipo__Cuerpo .equipo__TituloPrincipal {
   font-size: 22px;
@@ -291,8 +293,8 @@
 }
 .equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro {
   display: flex;
-  background-color: rgb(69, 54, 54);
   flex-direction: column;
+  background-color: rgba(69, 54, 54, 0.864);
 }
 .equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos {
   text-align: center;
@@ -310,7 +312,7 @@
   width: 55%;
 }
 .equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Filiacion {
-  background-color: rgba(0, 0, 0, 0.5843137255);
+  background-color: rgba(0, 0, 0, 0.584);
   margin-right: 12px;
   padding-top: 15px;
 }
@@ -327,7 +329,7 @@
   line-height: 2;
 }
 .equipo__Cuerpo div .equipo__Tarjeta .equipo__Miembro .equipo__MiembroDatos .equipo__Cita {
-  background-color: rgba(0, 0, 0, 0.5843137255);
+  background-color: rgba(0, 0, 0, 0.584);
   color: #d6d6d6;
   font-style: italic;
   font-size: 12px;
@@ -347,7 +349,7 @@
 .contact__Cuerpo div .contact__Formulario {
   border-radius: 25px;
   background-color: rgb(78, 12, 12);
-  color: #f5f5dc;
+  color: rgb(245, 245, 220);
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -368,10 +370,10 @@
   margin-bottom: 15px;
 }
 .contact__Cuerpo div .contact__Formulario .contact__Tipo {
-  font-size: 18px;
-  margin-left: 10px;
   display: flex;
   flex-direction: row;
+  font-size: 18px;
+  margin-left: 10px;
   justify-content: space-evenly;
   padding-left: 15px;
   padding-right: 15px;
@@ -380,14 +382,12 @@
   font-size: 16px;
 }
 .contact__Cuerpo div .contact__Formulario .contact__Boton {
-  background-color: rgb(245, 245, 220);
-  border-radius: 10px;
-  padding: 10px 20px;
+  background-color: rgb(235, 235, 235);
 }
 .contact__Cuerpo div .contact__Formulario .contact__Boton:hover {
-  background-color: rgb(255, 233, 233);
+  background-color: rgb(245, 245, 220);
 }
-.contact__Cuerpo div .contact__Otros {
+.contact__Cuerpo .contact__Otros {
   display: flex;
   flex-direction: column;
   border-radius: 22px;
@@ -397,26 +397,26 @@
   margin-bottom: 30px;
   justify-content: space-around;
 }
-.contact__Cuerpo div .contact__Otros .contact__SubtituloOtro {
+.contact__Cuerpo .contact__Otros .contact__SubtituloOtro {
   font-size: 18px;
   text-align: center;
 }
-.contact__Cuerpo div .contact__Otros .contact__Foto {
+.contact__Cuerpo .contact__Otros .contact__Foto {
   border-radius: 25px;
   width: 80%;
   height: auto;
   align-self: center;
 }
-.contact__Cuerpo div .contact__Otros .contact__OtrosTexto {
+.contact__Cuerpo .contact__Otros .contact__OtrosTexto {
   font-size: 18px;
   text-align: start;
 }
-.contact__Cuerpo div .contact__Parrafo {
+.contact__Cuerpo .contact__Parrafo {
   font-size: 18px;
   text-indent: 80px;
   text-align: justify;
   line-height: 1.5;
-  color: #f5f5dc;
+  color: rgb(245, 245, 220);
   background-color: rgb(78, 12, 12);
   border-radius: 25px;
   padding: 30px;

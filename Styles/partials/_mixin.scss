@@ -1,0 +1,4 @@
+@mixin display ($tipo, $direction) {
+    display: $tipo;
+    flex-direction: $direction;    
+}

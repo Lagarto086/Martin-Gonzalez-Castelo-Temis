@@ -1,4 +1,7 @@
 @import "./partials/variables",
+        "./partials/extends",
+        "./partials/mixin",
+        "./partials/maps",
         "./partials/header",
         "./partials/footer";
 
@@ -14,7 +17,7 @@
 /* INDEX (Mobile) */
 
 .cuerpoIndex {
-    background-color: $primaryBGColor;
+    background-color: map-get($fondo, primaryBGColor);
 
     .introduccion {
         color: $thirdFontColor;
@@ -34,7 +37,7 @@
         margin-bottom: 20px; 
 
         .citaBottom { 
-            background-color: $thirdBGColor;
+            background-color: map-get($fondo, thirdBGColor);
             font-style: italic;
             padding: 20px;
         }
@@ -51,23 +54,20 @@
     justify-content: center;
 
     .serv__Tipo {
-        background-color: rgba(48, 33, 33, 0.8);
+        background-color: map-get($fondo, fifthBGColor);
         border-radius: 15px;
         margin-top: 15px;
         margin-bottom: 10px;
   
         .serv__TipoTitulo {
-            background-color: $secondaryBGColor;
+            background-color: map-get($fondo, secondaryBGColor);
             color:  $primaryFontColor;
             font-size: 18px;
-            border-radius: 20px;
-            padding: 10px 20px;
-            margin-top: 5px; 
-            margin-bottom: 5px; 
+            @extend %espaciadoElemento;
         }
 
         .serv__Rama {
-            background-color: rgba(255, 0, 0, 0.1);
+            background-color: map-get($fondo, sixthBGColor);
             border-radius: 15px;
             list-style-type: none;
             color: rgb(201, 201, 201);
@@ -98,9 +98,9 @@
 
     .nosotros__Subtitulo {
         border-radius: 25px;
-        background-color: $thirdBGColor;
+        background-color: map-get($fondo, thirdBGColor);
         font-size: 20px;
-        color: rgb(255, 190, 190);
+        color: $fourtFontColor;
         text-decoration: underline solid 3px rgb(255, 190, 190);
         margin: 20px 30px;
         padding: 10px 20px;
@@ -108,7 +108,7 @@
 
     .nosotros__Texto {
         border-radius: 25px;
-        background-color: rgba(69, 54, 54, 0.864);
+        background-color: map-get($fondo, seventhBGColor);
         color:  $primaryFontColor;
         font-size: 16px;
         line-height: 2;
@@ -119,6 +119,7 @@
         padding: 10px 20px;
     }
 }
+
 
 
 /* EQUIPO (Mobile) */
@@ -136,15 +137,14 @@
         justify-content: center;
     
         .equipo__Tarjeta {
-            background-color: rgb(78, 12, 12);
+            background-color: map-get($fondo, eigthBGColor);
             color:  $primaryFontColor;
             margin-top: 15px;
             padding: 15px;
 
             .equipo__Miembro {
-                display: flex;    
-                background-color: rgb(69, 54, 54);
-                flex-direction: column;      
+                @include display($tipo: flex, $direction: column);
+                background-color: map-get($fondo, seventhBGColor);
                 
                 .equipo__MiembroDatos {
                     text-align: center;
@@ -163,7 +163,7 @@
                     }   
 
                     .equipo__Filiacion {
-                        background-color:  $thirdBGColor;
+                        background-color: map-get($fondo, thirdBGColor);
                         margin-right: 12px;
                         padding-top: 15px;
                         
@@ -178,14 +178,13 @@
                     }
                     
                     .equipo__Eventos {
-                        display: none;
-                        flex-direction: column;
+                        @include display($tipo: none, $direction: column);
                         line-height: 2;
                     }
                     
 
                     .equipo__Cita {
-                        background-color: $thirdBGColor;
+                        background-color: map-get($fondo, thirdBGColor);
                         color:  $primaryFontColor;
                         font-style: italic;  
                         font-size: 12px;   
@@ -215,7 +214,7 @@
 
         .contact__Formulario {
             border-radius: 25px;
-            background-color: rgb(78, 12, 12);
+            background-color: map-get($fondo, eigthBGColor);
             color:  $secondaryFontColor;
             text-align: center;
             padding-top: 20px;
@@ -239,10 +238,9 @@
             }
 
             .contact__Tipo {
+                @include display($tipo: flex, $direction: row);
                 font-size: 18px;
                 margin-left: 10px;
-                display: flex;
-                flex-direction: row;
                 justify-content: space-evenly;
                 padding-left: 15px;
                 padding-right: 15px;
@@ -253,20 +251,19 @@
             }
                     
             .contact__Boton {
-                background-color: rgb(245, 245, 220);
-                border-radius: 10px;
-                padding: 10px 20px;
+                background-color: map-get($fondo, primaryBGColor);
+                @extend %espaciadoElemento;
                 &:hover {
-                    background-color: rgb(255, 233, 233);
+                    background-color:map-get($fondo, ninthBGColor);
                 }
             }
         }
+    }
 
         .contact__Otros {
-            display: flex;
-            flex-direction: column;
+            @include display($tipo: flex, $direction: column);
             border-radius: 22px;
-            background-color: rgb(245, 245, 220);
+            background-color: map-get($fondo, ninthBGColor);
             padding-top: 20px;
             padding-bottom: 20px;
             margin-bottom: 30px;
@@ -296,12 +293,12 @@
             text-align: justify;
             line-height: 1.5;
             color: $secondaryFontColor;
-            background-color: rgb(78, 12, 12);
+            background-color: map-get($fondo, eigthBGColor);
             border-radius: 25px;
             padding: 30px;
         }
     }
-}
+
 
 
 
@@ -412,8 +409,7 @@
                             }
                 
                             .equipo__ListaJornadas {
-                                display: flex;
-                                flex-direction: column;
+                                @include display($tipo: flex, $direction: column);
                                 
                                 .equipo__Jornadas {
                                     display: inline-flex;
@@ -429,8 +425,7 @@
                             }
                 
                             .equipo__ListaSeminarios {
-                                display: flex;
-                                flex-direction: column;
+                                @include display($tipo: flex, $direction: column);
                             
                                 .equipo__Seminarios {
                                     display: inline-flex;
@@ -596,8 +591,7 @@
                             }
                 
                             .equipo__ListaJornadas {
-                                display: flex;
-                                flex-direction: column;
+                                @include display($tipo: flex, $direction: column);
                                 
                                 .equipo__Jornadas {
                                     display: inline-flex;
@@ -611,8 +605,7 @@
                             }
                 
                             .equipo__ListaSeminarios {
-                                display: flex;
-                                flex-direction: column;
+                                @include display($tipo: flex, $direction: column);
                             
                                 .equipo__Seminarios {
                                     display: inline-flex;
