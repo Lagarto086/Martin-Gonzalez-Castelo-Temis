@@ -344,7 +344,7 @@
 }
 .contact__Cuerpo .contact__Titulo {
   font-size: 16px;
-  text-justify: 40px;
+  text-indent: 40px;
 }
 .contact__Cuerpo div {
   justify-content: space-evenly;
