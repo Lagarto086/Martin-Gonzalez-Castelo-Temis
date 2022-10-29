@@ -67,5 +67,5 @@ while (vacio) {
     verificacionDesvinculacion (tipoDesvinculacion, antiguedad, salario);
 }
 
-alert(nombreCliente + ", dado su " + tipoDesvinculacion + ", de la empresa por la que trabajó " + antiguedad + " con un sueldo de $ " + salario + " es de un Total de: $ " + indemnizacion);
+alert(nombreCliente + ", dado su " + tipoDesvinculacion + ", de la empresa por la que trabajó con un sueldo de $ " + salario + " es de un Total de: $ " + indemnizacion);
 
